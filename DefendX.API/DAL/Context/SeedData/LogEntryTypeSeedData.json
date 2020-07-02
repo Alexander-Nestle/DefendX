@@ -1,0 +1,26 @@
+[
+    {
+        "Type": "Error"
+    },
+    {
+        "Type": "Login"
+    },
+    {
+        "Type": "Create"
+    },
+    {
+        "Type": "Read"
+    },
+    {
+        "Type": "Update"
+    },
+    {
+        "Type": "Delete"
+    },
+    {
+        "Type": "LicensePrint"
+    },
+    {
+        "Type": "Email"
+    }
+]

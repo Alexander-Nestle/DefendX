@@ -1,0 +1,47 @@
+import { Rank } from 'src/app/models/mil/rank';
+import { Service } from 'src/app/models/mil/service';
+import { User } from 'src/app/models/user/user';
+import { Unit } from 'src/app/models/mil/unit';
+import { LicenseIssue } from './licenseIssue';
+import { LicenseSearchResult } from './licenseSearchResult';
+
+export interface License {
+    id: number;
+    dodId: number;
+    sponsorDodId: number;
+    sponsorId: number;
+    sponsor: License;
+    unitId: number;
+    unit: Unit;
+    rankId: number;
+    rank: Rank;
+    serviceId: number;
+    service: Service;
+    lastEditedById: number;
+    lastEditedBy: User;
+    firstName: string;
+    middleInitial: string;
+    lastName: string;
+    gender: string;
+    dob: Date;
+    height: number;
+    weight: number;
+    hairColor: string;
+    eyeColor: string;
+    glasses: boolean;
+    tdy: boolean;
+    onBaseOnly: boolean;
+    autoJeep: boolean;
+    motorCycle: boolean;
+    motor: boolean;
+    other: boolean;
+    dateUpdated: Date;
+    dateCreated: Date;
+    dateExpired: Date;
+    permitNumber: string;
+    dependents: LicenseSearchResult[];
+    issues: LicenseIssue[];
+    isAuthenticated: boolean;
+    remarks: string;
+    signatureData: string;
+}

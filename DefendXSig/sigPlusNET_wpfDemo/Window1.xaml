@@ -1,0 +1,15 @@
+﻿<Window x:Class="defendXSig.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Topaz="clr-namespace:Topaz;assembly=SigPlusNET" 
+    Title="DefendXSig" Height="300" Width="518" Closing="Window_Closing">
+    <Grid Height="139" Width="23">
+        <WindowsFormsHost Margin="-235,-47,-235,30">
+            <Topaz:SigPlusNET x:Name="sigPlusNET1" 
+                          Dock="Fill" />
+        </WindowsFormsHost>
+        <!--<Button Height="23" HorizontalAlignment="Left" Margin="-235,0,0,-32" Name="cmdSign" VerticalAlignment="Bottom" Width="75" Click="cmdSign_Click" Style="{StaticResource FormButton}">Sign</Button>-->
+        <Button Height="23" Margin="0,0,-125,-32" Name="cmdClear" VerticalAlignment="Bottom" Width="98" Click="cmdClear_Click" HorizontalAlignment="Right" Style="{StaticResource FormButtonAlt}">Clear</Button>
+        <Button Height="23" Margin="0,0,-235,-32" Name="cmdSigString" VerticalAlignment="Bottom" Click="cmdSigString_Click" HorizontalAlignment="Right" Width="98" Style="{StaticResource FormButton}">Save</Button>
+    </Grid>
+</Window>

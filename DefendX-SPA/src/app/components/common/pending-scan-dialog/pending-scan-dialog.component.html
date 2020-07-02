@@ -1,0 +1,10 @@
+<div style="position: relative">
+  <h2 mat-dialog-title>{{ title }}</h2>
+  <mat-dialog-content align="center">
+    <mat-spinner class="center-inline" color="accent" [diameter]="60"></mat-spinner>
+    <br />
+    <div *ngIf="isValidCAC === false">
+        <p class="text-accent">Please re-scan valid ID.</p>
+    </div>
+  </mat-dialog-content>
+</div>

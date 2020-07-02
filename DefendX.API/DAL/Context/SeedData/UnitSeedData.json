@@ -1,0 +1,1811 @@
+[
+    {
+        "Name": "Department of Defense",
+        "UnitAbbreviation": "DOD"
+    },
+    {
+        "Name": "Pacific Command",
+        "ParentId": 1,
+        "UnitAbbreviation": "PACOM"
+    },
+    {
+        "Name": "Pacific Air Forces",
+        "ParentId": 2,
+        "UnitAbbreviation": "PACAF"
+    },
+    {
+        "Name": "Pacific Fleet",
+        "ParentId": 2,
+        "UnitAbbreviation": "USPACFLT"
+    },
+    {
+        "Name": "Marine Corps Forces Pacific",
+        "ParentId": 2,
+        "UnitAbbreviation": "MARFORPAC"
+    },
+    {
+        "Name": "Army Pacific",
+        "ParentId": 2,
+        "UnitAbbreviation": "USARPAC"
+    },
+    {
+        "Name": "5 Air Force",
+        "ParentId": 3,
+        "UnitAbbreviation": "5 AF"
+    },
+    {
+        "Name": "7 Air Force",
+        "ParentId": 3,
+        "UnitAbbreviation": "7 AF"
+    },
+    {
+        "Name": "11 Air Force",
+        "ParentId": 3,
+        "UnitAbbreviation": "11 AF"
+    },
+    {
+        "Name": "3 Fleet",
+        "ParentId": 4
+    },
+    {
+        "Name": "7 Fleet",
+        "ParentId": 4
+    },
+    {
+        "Name": "US Naval Forces Japan",
+        "ParentId": 4,
+        "UnitAbbreviation": "USNFJ"
+    },
+    {
+        "Name": "US Naval Forces Korea",
+        "ParentId": 4,
+        "UnitAbbreviation": "USNFK"
+    },
+    {
+        "Name": "Joint Region Marianas",
+        "ParentId": 4
+    },
+    {
+        "Name": "Navy Region Hawaii",
+        "ParentId": 4
+    },
+    {
+        "Name": "I Marine Expeditionary Force",
+        "ParentId": 5,
+        "UnitAbbreviation": "1 MEF"
+    },
+    {
+        "Name": "III Marine Expeditionary Force",
+        "ParentId": 5,
+        "UnitAbbreviation": "3 MEF"
+    },
+    {
+        "Name": "Marine Corps Activity Guam",
+        "ParentId": 5,
+        "UnitAbbreviation": "MCAG"
+    },
+    {
+        "Name": "Marine Rotational Force - Darwin",
+        "ParentId": 5
+    },
+    {
+        "Name": "8 Army",
+        "ParentId": 6
+    },
+    {
+        "Name": "7 Infantry Division",
+        "ParentId": 6
+    },
+    {
+        "Name": "25 Infantry Division",
+        "ParentId": 6
+    },
+    {
+        "Name": "US Army Alaska",
+        "ParentId": 6
+    },
+    {
+        "Name": "US Army Japan",
+        "ParentId": 6
+    },
+    {
+        "Name": "8 Theater Sustainment Command",
+        "ParentId": 6
+    },
+    {
+        "Name": "311 Signal Command",
+        "ParentId": 6
+    },
+    {
+        "Name": "94 Army Air & Missile Defense Command",
+        "ParentId": 6,
+        "UnitAbbreviation": "94 AAMDC"
+    },
+    {
+        "Name": "9 Mission Support Command",
+        "ParentId": 6,
+        "UnitAbbreviation": "9 MSC"
+    },
+    {
+        "Name": "196 Infantry Brigade",
+        "ParentId": 6,
+        "UnitAbbreviation": "196 IB"
+    },
+    {
+        "Name": "500 Military Intelligence Brigade",
+        "ParentId": 6,
+        "UnitAbbreviation": "500 MIB"
+    },
+    {
+        "Name": "18 Medical Command",
+        "ParentId": 6,
+        "UnitAbbreviation": "18 MEDCOM"
+    },
+    {
+        "Name": "5 Battlefield Coordination Detachment",
+        "ParentId": 6,
+        "UnitAbbreviation": "5 BCD"
+    },
+    {
+        "Name": "18 Wing",
+        "ParentId": 7,
+        "UnitAbbreviation": "18 WG"
+    },
+    {
+        "Name": "35 Fighter Wing",
+        "ParentId": 7,
+        "UnitAbbreviation": "35 FW"
+    },
+    {
+        "Name": "374 Airlift Wing",
+        "ParentId": 7,
+        "UnitAbbreviation": "374 AW"
+    },
+    {
+        "Name": "51 Fighter Wing",
+        "ParentId": 8,
+        "UnitAbbreviation": "51 FW"
+    },
+    {
+        "Name": "8 Fighter Wing",
+        "ParentId": 8,
+        "UnitAbbreviation": "8 FW"
+    },
+    {
+        "Name": "607 Air and Space Operations Center",
+        "ParentId": 8,
+        "UnitAbbreviation": "607 ASOC"
+    },
+    {
+        "Name": "607 Air Support Group",
+        "ParentId": 8,
+        "UnitAbbreviation": "607 ASG"
+    },
+    {
+        "Name": "607 Air Support Operations Group",
+        "ParentId": 8,
+        "UnitAbbreviation": "607 ASOG"
+    },
+    {
+        "Name": "607 Support Squadron",
+        "ParentId": 39,
+        "UnitAbbreviation": "607 SPTS"
+    },
+    {
+        "Name": "3 Wing",
+        "ParentId": 9,
+        "UnitAbbreviation": "3 WG"
+    },
+    {
+        "Name": "354 Fighter Wing",
+        "ParentId": 9,
+        "UnitAbbreviation": "354 FW"
+    },
+    {
+        "Name": "36 Wing",
+        "ParentId": 9,
+        "UnitAbbreviation": "36 WG"
+    },
+    {
+        "Name": "611 Air and Space Operations Center",
+        "ParentId": 9,
+        "UnitAbbreviation": "611 ASOC"
+    },
+    {
+        "Name": "611 Air Support Group",
+        "ParentId": 9,
+        "UnitAbbreviation": "611 ASG"
+    },
+    {
+        "Name": "Missile Defense Flight",
+        "ParentId": 9,
+        "UnitAbbreviation": "MDF"
+    },
+    {
+        "Name": "11 AF/ANR Logistics Flight",
+        "ParentId": 9
+    },
+    {
+        "Name": "168 Air Refueling Wing",
+        "ParentId": 9,
+        "UnitAbbreviation": "168 ARW"
+    },
+    {
+        "Name": "176 Wing",
+        "ParentId": 9,
+        "UnitAbbreviation": "176 WG"
+    },
+    {
+        "Name": "Carrier Strike Group 1",
+        "ParentId": 10,
+        "UnitAbbreviation": "CSG-1"
+    },
+    {
+        "Name": "Carrier Strike Group 3",
+        "ParentId": 10,
+        "UnitAbbreviation": "CSG-3"
+    },
+    {
+        "Name": "Carrier Strike Group 9",
+        "ParentId": 10,
+        "UnitAbbreviation": "CSG-9"
+    },
+    {
+        "Name": "Carrier Strike Group 11",
+        "ParentId": 10,
+        "UnitAbbreviation": "CSG-11"
+    },
+    {
+        "Name": "Expeditionary Strike Group 3",
+        "ParentId": 10,
+        "UnitAbbreviation": "ESG-3"
+    },
+    {
+        "Name": "Naval Surface Group Mid-Pacific",
+        "ParentId": 10
+    },
+    {
+        "Name": "Amphibious Command Ship 1",
+        "ParentId": 10,
+        "UnitAbbreviation": "LCCS-1"
+    },
+    {
+        "Name": "Helicopter Maritime Strike Wing",
+        "ParentId": 10,
+        "UnitAbbreviation": "HMSW"
+    },
+    {
+        "Name": "Commander, Strike Force Training Pacific",
+        "ParentId": 10,
+        "UnitAbbreviation": "CSFTP"
+    },
+    {
+        "Name": "Explosive Ordnance Disposal Group 1",
+        "ParentId": 10,
+        "UnitAbbreviation": "EODG-1"
+    },
+    {
+        "Name": "Coastal Riverine Group 1",
+        "ParentId": 10,
+        "UnitAbbreviation": "CRG-1"
+    },
+    {
+        "Name": "Navy Air and Missile Defense Command",
+        "ParentId": 10,
+        "UnitAbbreviation": "NAMDC"
+    },
+    {
+        "Name": "Naval Mine and Anti-Sub Warfare Command",
+        "ParentId": 10,
+        "UnitAbbreviation": "NMAWC"
+    },
+    {
+        "Name": "Sub and Theater Anti-Sub Warfare Force 3 Fleet",
+        "ParentId": 10,
+        "UnitAbbreviation": "STASWF"
+    },
+    {
+        "Name": "Task Force 71",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-71"
+    },
+    {
+        "Name": "Task Force 72",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-72"
+    },
+    {
+        "Name": "Task Force 73/Logistics Gp Western Pacific",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-73"
+    },
+    {
+        "Name": "Task Force 74",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-74"
+    },
+    {
+        "Name": "Task Force 75",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-75"
+    },
+    {
+        "Name": "Task Force 76",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-76"
+    },
+    {
+        "Name": "Task Force 77",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-77"
+    },
+    {
+        "Name": "Task Force 78",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-78"
+    },
+    {
+        "Name": "Task Force 79",
+        "ParentId": 11,
+        "UnitAbbreviation": "TF-79"
+    },
+    {
+        "Name": "Naval Air Facility Atsugi",
+        "ParentId": 12
+    },
+    {
+        "Name": "Naval Air Facility Misawa",
+        "ParentId": 12
+    },
+    {
+        "Name": "Naval Support Facility Diego Garcia",
+        "ParentId": 12
+    },
+    {
+        "Name": "US Fleet Activities Yokosuka",
+        "ParentId": 12
+    },
+    {
+        "Name": "US Fleet Activities Sasebo",
+        "ParentId": 12
+    },
+    {
+        "Name": "Fleet Activities Okinawa",
+        "ParentId": 12
+    },
+    {
+        "Name": "1 Marine Division",
+        "ParentId": 16,
+        "UnitAbbreviation": "1 MD"
+    },
+    {
+        "Name": "3 Marine Aircraft Wing",
+        "ParentId": 16,
+        "UnitAbbreviation": "3 MAW"
+    },
+    {
+        "Name": "1 Marine Logistics Group",
+        "ParentId": 16,
+        "UnitAbbreviation": "1 MLG"
+    },
+    {
+        "Name": "I MEF Information Group",
+        "ParentId": 16,
+        "UnitAbbreviation": "1 MEFIG"
+    },
+    {
+        "Name": "1 Marine Expeditionary Brigade",
+        "ParentId": 16,
+        "UnitAbbreviation": "1 MEB"
+    },
+    {
+        "Name": "11 Marine Expeditionary Unit",
+        "ParentId": 16,
+        "UnitAbbreviation": "11 MEU"
+    },
+    {
+        "Name": "13 Marine Expeditionary Unit",
+        "ParentId": 16,
+        "UnitAbbreviation": "13 MEU"
+    },
+    {
+        "Name": "15 Marine Expeditionary Unit",
+        "ParentId": 16,
+        "UnitAbbreviation": "15 MEU"
+    },
+    {
+        "Name": "3 Marine Division",
+        "ParentId": 17,
+        "UnitAbbreviation": "3 MD"
+    },
+    {
+        "Name": "1 Marine Aircraft Wing",
+        "ParentId": 17,
+        "UnitAbbreviation": "1 MAW"
+    },
+    {
+        "Name": "3 Marine Logistics Group",
+        "ParentId": 17,
+        "UnitAbbreviation": "3 MLG"
+    },
+    {
+        "Name": "III MEF Information Group",
+        "ParentId": 17,
+        "UnitAbbreviation": "3 MEFIG"
+    },
+    {
+        "Name": "III Marine Expeditionary HQ",
+        "ParentId": 17,
+        "UnitAbbreviation": "3 MEHQ"
+    },
+    {
+        "Name": "3 Intelligence Battalion",
+        "ParentId": 17,
+        "UnitAbbreviation": "3 IB"
+    },
+    {
+        "Name": "3 Law Enforcement Battalion",
+        "ParentId": 17,
+        "UnitAbbreviation": "3 LEB"
+    },
+    {
+        "Name": "3 Radio Battalion",
+        "ParentId": 17,
+        "UnitAbbreviation": "3 RB"
+    },
+    {
+        "Name": "7 Communication Battalion",
+        "ParentId": 17,
+        "UnitAbbreviation": "7 CB"
+    },
+    {
+        "Name": "5 Air Naval Gunfire Liaison Company",
+        "ParentId": 17,
+        "UnitAbbreviation": "5 ANGLC"
+    },
+    {
+        "Name": "3 Marine Expeditionary Battalion",
+        "ParentId": 17,
+        "UnitAbbreviation": "3 MEB"
+    },
+    {
+        "Name": "31 Marine Expeditionary Unit",
+        "ParentId": 17,
+        "UnitAbbreviation": "31 MEU"
+    },
+    {
+        "Name": "3 Radio Battalion",
+        "ParentId": 17
+    },
+    {
+        "Name": "2nd Infantry Division",
+        "ParentId": 20
+    },
+    {
+        "Name": "19 Sustainment Command",
+        "ParentId": 20
+    },
+    {
+        "Name": "35 Air Defense Artillery Brigade",
+        "ParentId": 20,
+        "UnitAbbreviation": "35 ADAB"
+    },
+    {
+        "Name": "501 Military Intelligence Brigade",
+        "ParentId": 20,
+        "UnitAbbreviation": "501 MIB"
+    },
+    {
+        "Name": "1 Signal Brigade",
+        "ParentId": 20,
+        "UnitAbbreviation": "1 SB"
+    },
+    {
+        "Name": "65 Medical Brigade",
+        "ParentId": 20,
+        "UnitAbbreviation": "65 MDB"
+    },
+    {
+        "Name": "4 Battalion",
+        "ParentId": 20
+    },
+    {
+        "Name": "106 Medical Detachment",
+        "ParentId": 20
+    },
+    {
+        "Name": "1 Stryker BCT",
+        "ParentId": 21
+    },
+    {
+        "Name": "2nd Stryker BCT",
+        "ParentId": 21
+    },
+    {
+        "Name": "81 Stryker BCT",
+        "ParentId": 21
+    },
+    {
+        "Name": "Division Artillery",
+        "ParentId": 21
+    },
+    {
+        "Name": "16 Combat Aviation Brigade",
+        "ParentId": 21
+    },
+    {
+        "Name": "17 Field Artillery Brigade",
+        "ParentId": 21
+    },
+    {
+        "Name": "555 Engineer Brigade",
+        "ParentId": 21
+    },
+    {
+        "Name": "201 Expeditionary Military Intelligence Brigade",
+        "ParentId": 21
+    },
+    {
+        "Name": "1 Stryker BCT",
+        "ParentId": 22
+    },
+    {
+        "Name": "2nd Infantry BCT",
+        "ParentId": 22
+    },
+    {
+        "Name": "3 Infantry BCT",
+        "ParentId": 22
+    },
+    {
+        "Name": "4 Infantry BCT",
+        "ParentId": 22
+    },
+    {
+        "Name": "Division Artillery",
+        "ParentId": 22
+    },
+    {
+        "Name": "Combat Aviation Brigade",
+        "ParentId": 22
+    },
+    {
+        "Name": "25 Sustainment Brigade",
+        "ParentId": 22
+    },
+    {
+        "Name": "NWTC",
+        "ParentId": 23
+    },
+    {
+        "Name": "NCOA",
+        "ParentId": 23
+    },
+    {
+        "Name": "17 Combat Sustainment Battalion",
+        "ParentId": 23
+    },
+    {
+        "Name": "Army Field Support Battalion-Alaska",
+        "ParentId": 23
+    },
+    {
+        "Name": "297 Regional Support Group",
+        "ParentId": 23
+    },
+    {
+        "Name": "US Army Garrison, Japan",
+        "ParentId": 24
+    },
+    {
+        "Name": "10 Support Group, Okinawa, Japan",
+        "ParentId": 24
+    },
+    {
+        "Name": "US Army Corps of Engineers, Japan District",
+        "ParentId": 24
+    },
+    {
+        "Name": "US Army Japan Band",
+        "ParentId": 24
+    },
+    {
+        "Name": "US Army Aviation Battalion Japan",
+        "ParentId": 24
+    },
+    {
+        "Name": "8 Special Troops Battalion",
+        "ParentId": 25
+    },
+    {
+        "Name": "45 Sustainment Brigade",
+        "ParentId": 25
+    },
+    {
+        "Name": "8 Military Police Brigade",
+        "ParentId": 25
+    },
+    {
+        "Name": "130 Engineer Brigade",
+        "ParentId": 25
+    },
+    {
+        "Name": "1 Signal Brigade",
+        "ParentId": 26
+    },
+    {
+        "Name": "516 Signal Brigade",
+        "ParentId": 26
+    },
+    {
+        "Name": "HQ and HQ Battery",
+        "ParentId": 27
+    },
+    {
+        "Name": "1 Battalion, 1 Air Defense Artillery Regiment",
+        "ParentId": 27
+    },
+    {
+        "Name": "10 Missile Defense Detachment",
+        "ParentId": 27
+    },
+    {
+        "Name": "14 Missile Defense Detachment",
+        "ParentId": 27
+    },
+    {
+        "Name": "US Army Pacific Support Unit",
+        "ParentId": 28
+    },
+    {
+        "Name": "3 Mobilization Support Group",
+        "ParentId": 28
+    },
+    {
+        "Name": "658 Regional Support Group",
+        "ParentId": 28
+    },
+    {
+        "Name": "Theater Support Group Pacific",
+        "ParentId": 28
+    },
+    {
+        "Name": "303 Maneuver Enhancement Brigade",
+        "ParentId": 28
+    },
+    {
+        "Name": "322nd Civil Affairs Brigade",
+        "ParentId": 28
+    },
+    {
+        "Name": "4960 Multi Functional Training Brigade",
+        "ParentId": 28
+    },
+    {
+        "Name": "1984 US Army Hospital",
+        "ParentId": 28
+    },
+    {
+        "Name": "302nd Transportation Terminal Battalion",
+        "ParentId": 28
+    },
+    {
+        "Name": "411 Engineer Battalion",
+        "ParentId": 28,
+        "UnitAbbreviation": "411 EB"
+    },
+    {
+        "Name": "Headquarters and Headquarters Company",
+        "ParentId": 30,
+        "UnitAbbreviation": "HHC"
+    },
+    {
+        "Name": "205 Military Intelligence Battalion",
+        "ParentId": 30,
+        "UnitAbbreviation": "205 MIB"
+    },
+    {
+        "Name": "301 Military Intelligence Battalion",
+        "ParentId": 30,
+        "UnitAbbreviation": "301 MIB"
+    },
+    {
+        "Name": "441 Military Intelligence Battalion",
+        "ParentId": 30,
+        "UnitAbbreviation": "441 MIB"
+    },
+    {
+        "Name": "715 Military Intelligence Battalion",
+        "ParentId": 30,
+        "UnitAbbreviation": "715 MIB"
+    },
+    {
+        "Name": "18 Operations Group",
+        "ParentId": 33,
+        "UnitAbbreviation": "18 OG"
+    },
+    {
+        "Name": "18 Mission Support Group",
+        "ParentId": 33,
+        "UnitAbbreviation": "18 MSG"
+    },
+    {
+        "Name": "18 Maintenance Group",
+        "ParentId": 33,
+        "UnitAbbreviation": "18 MXG"
+    },
+    {
+        "Name": "18 Medical Group",
+        "ParentId": 33,
+        "UnitAbbreviation": "18 MDG"
+    },
+    {
+        "Name": "18 Civil Engineer Group",
+        "ParentId": 33,
+        "UnitAbbreviation": "18 CEG"
+    },
+    {
+        "Name": "35 Operations Group",
+        "ParentId": 34,
+        "UnitAbbreviation": "35 OG"
+    },
+    {
+        "Name": "35 Maintenance Group",
+        "ParentId": 34,
+        "UnitAbbreviation": "35 MXG"
+    },
+    {
+        "Name": "35 Mission Support Group",
+        "ParentId": 34,
+        "UnitAbbreviation": "35 MSG"
+    },
+    {
+        "Name": "374 Operations Group",
+        "ParentId": 35,
+        "UnitAbbreviation": "374 OG"
+    },
+    {
+        "Name": "374 Maintenance Group",
+        "ParentId": 35,
+        "UnitAbbreviation": "374 MXG"
+    },
+    {
+        "Name": "374 Mission Support Group",
+        "ParentId": 35,
+        "UnitAbbreviation": "374 MSG"
+    },
+    {
+        "Name": "51 Operations Group",
+        "ParentId": 36,
+        "UnitAbbreviation": "51 OG"
+    },
+    {
+        "Name": "51 Mission Support Group",
+        "ParentId": 36,
+        "UnitAbbreviation": "51 MSG"
+    },
+    {
+        "Name": "51 Maintenance Group",
+        "ParentId": 36,
+        "UnitAbbreviation": "51 MXG"
+    },
+    {
+        "Name": "51 Medical Group",
+        "ParentId": 36,
+        "UnitAbbreviation": "51 MDG"
+    },
+    {
+        "Name": "51 Fighter Wing Staff Agencies",
+        "ParentId": 36,
+        "UnitAbbreviation": "51 FWSA"
+    },
+    {
+        "Name": "8 Operations Group",
+        "ParentId": 37,
+        "UnitAbbreviation": "8 OG"
+    },
+    {
+        "Name": "8 Maintenance Group",
+        "ParentId": 37,
+        "UnitAbbreviation": "8 MXG"
+    },
+    {
+        "Name": "8 Mission Support Group",
+        "ParentId": 37,
+        "UnitAbbreviation": "8 MSG"
+    },
+    {
+        "Name": "8 Medical Group",
+        "ParentId": 37,
+        "UnitAbbreviation": "8 MDG"
+    },
+    {
+        "Name": "3 Operations Group",
+        "ParentId": 42,
+        "UnitAbbreviation": "3 OG"
+    },
+    {
+        "Name": "3 Maintenance Group",
+        "ParentId": 42,
+        "UnitAbbreviation": "3 MXG"
+    },
+    {
+        "Name": "3 Mission Support Group",
+        "ParentId": 42,
+        "UnitAbbreviation": "3 MSG"
+    },
+    {
+        "Name": "3 Medical Group",
+        "ParentId": 42,
+        "UnitAbbreviation": "3 MDG"
+    },
+    {
+        "Name": "3 Wing Staff Agencies",
+        "ParentId": 42,
+        "UnitAbbreviation": "3 WSA"
+    },
+    {
+        "Name": "354 Operations Group",
+        "ParentId": 43,
+        "UnitAbbreviation": "354 OG"
+    },
+    {
+        "Name": "354 Maintenance Group",
+        "ParentId": 43,
+        "UnitAbbreviation": "354 MXG"
+    },
+    {
+        "Name": "354 Mission Support Group",
+        "ParentId": 43,
+        "UnitAbbreviation": "354 MSG"
+    },
+    {
+        "Name": "354 Medical Group",
+        "ParentId": 43,
+        "UnitAbbreviation": "354 MDG"
+    },
+    {
+        "Name": "36 Operations Group",
+        "ParentId": 44,
+        "UnitAbbreviation": "36 OG"
+    },
+    {
+        "Name": "36 Maintenance Group",
+        "ParentId": 44,
+        "UnitAbbreviation": "36 MXG"
+    },
+    {
+        "Name": "36 Contingency Response Group",
+        "ParentId": 44,
+        "UnitAbbreviation": "36 CRG"
+    },
+    {
+        "Name": "36 Medical Group",
+        "ParentId": 44,
+        "UnitAbbreviation": "36 MDG"
+    },
+    {
+        "Name": "36 Mission Support Group",
+        "ParentId": 44,
+        "UnitAbbreviation": "36 MSG"
+    },
+    {
+        "Name": "611 Air Support Squadron",
+        "ParentId": 46,
+        "UnitAbbreviation": "611 ASUS"
+    },
+    {
+        "Name": "611 Air Communications Squadron",
+        "ParentId": 46,
+        "UnitAbbreviation": "611 ACS"
+    },
+    {
+        "Name": "611 Civil Engineer Squadron",
+        "ParentId": 46,
+        "UnitAbbreviation": "611 CES"
+    },
+    {
+        "Name": "168 Operations Group",
+        "ParentId": 49,
+        "UnitAbbreviation": "168 OG"
+    },
+    {
+        "Name": "168 Maintenance Group",
+        "ParentId": 49,
+        "UnitAbbreviation": "168 MXG"
+    },
+    {
+        "Name": "168 Mission Support Group",
+        "ParentId": 49,
+        "UnitAbbreviation": "168 MSG"
+    },
+    {
+        "Name": "168 Medical Group",
+        "ParentId": 49,
+        "UnitAbbreviation": "168 MDG"
+    },
+    {
+        "Name": "213 Space Warning Squadron",
+        "ParentId": 49,
+        "UnitAbbreviation": "213 SWS"
+    },
+    {
+        "Name": "176 Operations Group",
+        "ParentId": 50,
+        "UnitAbbreviation": "176 OG"
+    },
+    {
+        "Name": "176 Maintenance Group",
+        "ParentId": 50,
+        "UnitAbbreviation": "176 MXG"
+    },
+    {
+        "Name": "176 Mission Support Group",
+        "ParentId": 50,
+        "UnitAbbreviation": "176 MSG"
+    },
+    {
+        "Name": "176 Medical Group",
+        "ParentId": 50,
+        "UnitAbbreviation": "176 MDG"
+    },
+    {
+        "Name": "11 Rescue Coordination Center",
+        "ParentId": 50,
+        "UnitAbbreviation": "11 RCC"
+    },
+    {
+        "Name": "176 Wing Staff",
+        "ParentId": 50,
+        "UnitAbbreviation": "176 WS"
+    },
+    {
+        "Name": "18 Aeromedical Evacuation Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "18 AES"
+    },
+    {
+        "Name": "18 Operations Support Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "18 OSS"
+    },
+    {
+        "Name": "44 Fighter Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "44 FS"
+    },
+    {
+        "Name": "67 Fighter Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "67 FS"
+    },
+    {
+        "Name": "31 Rescue Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "31 RS"
+    },
+    {
+        "Name": "33 Rescue Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "33 RS"
+    },
+    {
+        "Name": "623 Air Control Flight/Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "623 ACS"
+    },
+    {
+        "Name": "909 Air Refueling Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "909 ARS"
+    },
+    {
+        "Name": "961 Airborne Air Control(CTRL) Squadron",
+        "ParentId": 159,
+        "UnitAbbreviation": "961 AACS"
+    },
+    {
+        "Name": "18 Communications Squadron",
+        "ParentId": 160,
+        "UnitAbbreviation": "18 CS"
+    },
+    {
+        "Name": "18 Contracting Squadron",
+        "ParentId": 160,
+        "UnitAbbreviation": "18 CONS"
+    },
+    {
+        "Name": "18 Logistics Readiness Squadron",
+        "ParentId": 160,
+        "UnitAbbreviation": "18 LRS"
+    },
+    {
+        "Name": "18 Force Support Squadron",
+        "ParentId": 160,
+        "UnitAbbreviation": "18 FSS"
+    },
+    {
+        "Name": "18 Security Forces Squadron",
+        "ParentId": 160,
+        "UnitAbbreviation": "18 SFS"
+    },
+    {
+        "Name": "18 Aircraft Maintenance Squadron",
+        "ParentId": 161,
+        "UnitAbbreviation": "18 AMXS"
+    },
+    {
+        "Name": "718 Aircraft Maintenance Squadron",
+        "ParentId": 161,
+        "UnitAbbreviation": "718 AMXS"
+    },
+    {
+        "Name": "18 Equipment Maintenance Squadron",
+        "ParentId": 161,
+        "UnitAbbreviation": "18 EMXS"
+    },
+    {
+        "Name": "18 Component Maintenance Squadron",
+        "ParentId": 161,
+        "UnitAbbreviation": "18 CMS"
+    },
+    {
+        "Name": "18 Munitions Squadron",
+        "ParentId": 161,
+        "UnitAbbreviation": "18 MUNS"
+    },
+    {
+        "Name": "18 Aerospace Medicine Squadron",
+        "ParentId": 162,
+        "UnitAbbreviation": "18 AMDS"
+    },
+    {
+        "Name": "18 Dental Squadron",
+        "ParentId": 162,
+        "UnitAbbreviation": "18 DS"
+    },
+    {
+        "Name": "18 Medical Operations Squadron",
+        "ParentId": 162,
+        "UnitAbbreviation": "18 MDOS"
+    },
+    {
+        "Name": "18 Medical Support Squadron",
+        "ParentId": 162,
+        "UnitAbbreviation": "18 MDSS"
+    },
+    {
+        "Name": "18 Civil Engineer Squadron",
+        "ParentId": 163,
+        "UnitAbbreviation": "18 CES"
+    },
+    {
+        "Name": "718 Civil Engineer Squadron",
+        "ParentId": 163,
+        "UnitAbbreviation": "718 CES"
+    },
+    {
+        "Name": "13 Fighter Squadron",
+        "ParentId": 164,
+        "UnitAbbreviation": "13 FS"
+    },
+    {
+        "Name": "14 Fighter Squadron",
+        "ParentId": 164,
+        "UnitAbbreviation": "14 FS"
+    },
+    {
+        "Name": "35 Operations Support Squadron",
+        "ParentId": 164,
+        "UnitAbbreviation": "35 OSS"
+    },
+    {
+        "Name": "610 Air Control Flight",
+        "ParentId": 164,
+        "UnitAbbreviation": "610 ACF"
+    },
+    {
+        "Name": "35 Aircraft Maintenance Squadron",
+        "ParentId": 165,
+        "UnitAbbreviation": "35 AMXS"
+    },
+    {
+        "Name": "35 Maintenance Squadron",
+        "ParentId": 165,
+        "UnitAbbreviation": "35 MXS"
+    },
+    {
+        "Name": "35 Maintenance Operations Squadron",
+        "ParentId": 165,
+        "UnitAbbreviation": "35 MOS"
+    },
+    {
+        "Name": "35 Civil Engineer Squadron",
+        "ParentId": 166,
+        "UnitAbbreviation": "35 CES"
+    },
+    {
+        "Name": "35 Communications Squadron",
+        "ParentId": 166,
+        "UnitAbbreviation": "35 CS"
+    },
+    {
+        "Name": "35 Contracting Squadron",
+        "ParentId": 166,
+        "UnitAbbreviation": "35 CONS"
+    },
+    {
+        "Name": "35 Force Support Squadron",
+        "ParentId": 166,
+        "UnitAbbreviation": "35 FSS"
+    },
+    {
+        "Name": "35 Logistics Readiness Squadron",
+        "ParentId": 166,
+        "UnitAbbreviation": "35 LRS"
+    },
+    {
+        "Name": "35 Security Forces Squadron",
+        "ParentId": 166,
+        "UnitAbbreviation": "35 SFS"
+    },
+    {
+        "Name": "36 Airlift Squadron",
+        "ParentId": 167,
+        "UnitAbbreviation": "36 AS"
+    },
+    {
+        "Name": "459 Airlift Squadron",
+        "ParentId": 167,
+        "UnitAbbreviation": "459 AS"
+    },
+    {
+        "Name": "374 Operations Support Squadron",
+        "ParentId": 167,
+        "UnitAbbreviation": "374 OSS"
+    },
+    {
+        "Name": "374 Aircraft Maintenance Squadron",
+        "ParentId": 168,
+        "UnitAbbreviation": "374 AMXS"
+    },
+    {
+        "Name": "374 Maintenance Squadron",
+        "ParentId": 168,
+        "UnitAbbreviation": "374 MXS"
+    },
+    {
+        "Name": "374 Maintenance Operations Squadron",
+        "ParentId": 168,
+        "UnitAbbreviation": "374 MOS"
+    },
+    {
+        "Name": "374 Civil Engineer Squadron",
+        "ParentId": 169,
+        "UnitAbbreviation": "374 CES"
+    },
+    {
+        "Name": "374 Communications Squadron",
+        "ParentId": 169,
+        "UnitAbbreviation": "374 CS"
+    },
+    {
+        "Name": "374 Contracting Squadron",
+        "ParentId": 169,
+        "UnitAbbreviation": "374 CONS"
+    },
+    {
+        "Name": "374 Force Support Squadron",
+        "ParentId": 169,
+        "UnitAbbreviation": "374 FSS"
+    },
+    {
+        "Name": "374 Logistics Readiness Squadron",
+        "ParentId": 169,
+        "UnitAbbreviation": "374 LRS"
+    },
+    {
+        "Name": "374 Security Forces Squadron",
+        "ParentId": 169,
+        "UnitAbbreviation": "374 SFS"
+    },
+    {
+        "Name": "25 Fighter Squadron",
+        "ParentId": 170,
+        "UnitAbbreviation": "25 FS"
+    },
+    {
+        "Name": "36 Fighter Squadron",
+        "ParentId": 170,
+        "UnitAbbreviation": "36 FS"
+    },
+    {
+        "Name": "51 Operations Support Squadron",
+        "ParentId": 170,
+        "UnitAbbreviation": "51 OSS"
+    },
+    {
+        "Name": "51 Civil Engineer Squadron",
+        "ParentId": 171,
+        "UnitAbbreviation": "51 CES"
+    },
+    {
+        "Name": "51 Communications Squadron",
+        "ParentId": 171,
+        "UnitAbbreviation": "51 CS"
+    },
+    {
+        "Name": "51 Force Support Squadron",
+        "ParentId": 171,
+        "UnitAbbreviation": "51 FSS"
+    },
+    {
+        "Name": "51 Logistics Readiness Squadron",
+        "ParentId": 171,
+        "UnitAbbreviation": "51 LRS"
+    },
+    {
+        "Name": "51 Security Forces Squadron",
+        "ParentId": 171,
+        "UnitAbbreviation": "51 SFS"
+    },
+    {
+        "Name": "51 Aircraft Maintenance Squadron",
+        "ParentId": 172,
+        "UnitAbbreviation": "51 AMXS"
+    },
+    {
+        "Name": "51 Maintenance Squadron",
+        "ParentId": 172,
+        "UnitAbbreviation": "51 MXS"
+    },
+    {
+        "Name": "51 Maintenance Operations Squadron",
+        "ParentId": 172,
+        "UnitAbbreviation": "51 MOS"
+    },
+    {
+        "Name": "51 Munitions Squadron",
+        "ParentId": 172,
+        "UnitAbbreviation": "51 MUNS"
+    },
+    {
+        "Name": "51 Aerospace Medicine Squadron",
+        "ParentId": 173,
+        "UnitAbbreviation": "51 AMDS"
+    },
+    {
+        "Name": "51 Dental Squadron",
+        "ParentId": 173,
+        "UnitAbbreviation": "51 DS"
+    },
+    {
+        "Name": "51 Medical Operations Squadron",
+        "ParentId": 173,
+        "UnitAbbreviation": "51 MDOS"
+    },
+    {
+        "Name": "51 Medical Support Squadron",
+        "ParentId": 173,
+        "UnitAbbreviation": "51 MDSS"
+    },
+    {
+        "Name": "51 Comptroller Squadron",
+        "ParentId": 36,
+        "UnitAbbreviation": "51 CPTS"
+    },
+    {
+        "Name": "35 Fighter Squadron",
+        "ParentId": 175,
+        "UnitAbbreviation": "35 FS"
+    },
+    {
+        "Name": "80 Fighter Squadron",
+        "ParentId": 175,
+        "UnitAbbreviation": "80 FS"
+    },
+    {
+        "Name": "8 Operations Support Squadron",
+        "ParentId": 175,
+        "UnitAbbreviation": "8 OSS"
+    },
+    {
+        "Name": "8 Aircraft Maintenance Squadron",
+        "ParentId": 176,
+        "UnitAbbreviation": "8 AMXS"
+    },
+    {
+        "Name": "8 Maintenance Squadron",
+        "ParentId": 176,
+        "UnitAbbreviation": "8 MXS"
+    },
+    {
+        "Name": "8 Maintenance Operations Squadron",
+        "ParentId": 176,
+        "UnitAbbreviation": "8 MOS"
+    },
+    {
+        "Name": "8 Civil Engineer Squadron",
+        "ParentId": 177,
+        "UnitAbbreviation": "8 CES"
+    },
+    {
+        "Name": "8 Communications Squadron",
+        "ParentId": 177,
+        "UnitAbbreviation": "8 CS"
+    },
+    {
+        "Name": "8 Force Support Squadron",
+        "ParentId": 177,
+        "UnitAbbreviation": "8 FSS"
+    },
+    {
+        "Name": "8 Logistics Readiness Squadron",
+        "ParentId": 177,
+        "UnitAbbreviation": "8 LRS"
+    },
+    {
+        "Name": "8 Security Forces Squadron",
+        "ParentId": 177,
+        "UnitAbbreviation": "8 SFS"
+    },
+    {
+        "Name": "8 Medical Operations Squadron",
+        "ParentId": 178,
+        "UnitAbbreviation": "8 MDOS"
+    },
+    {
+        "Name": "8 Medical Support Squadron",
+        "ParentId": 178,
+        "UnitAbbreviation": "8 MDSS"
+    },
+    {
+        "Name": "517 Airlift Squadron",
+        "ParentId": 179,
+        "UnitAbbreviation": "517 AS"
+    },
+    {
+        "Name": "90 Fighter Squadron",
+        "ParentId": 179,
+        "UnitAbbreviation": "90 FS"
+    },
+    {
+        "Name": "525 Fighter Squadron",
+        "ParentId": 179,
+        "UnitAbbreviation": "525 FS"
+    },
+    {
+        "Name": "962nd Airborne Command and Control Squadron",
+        "ParentId": 179,
+        "UnitAbbreviation": "962 ACCS"
+    },
+    {
+        "Name": "3 Operations Support Squadron",
+        "ParentId": 179,
+        "UnitAbbreviation": "3 OSS"
+    },
+    {
+        "Name": "3 Aircraft Maintenance Squadron",
+        "ParentId": 180,
+        "UnitAbbreviation": "3 AMXS"
+    },
+    {
+        "Name": "703 Aircraft Maintenance Squadron",
+        "ParentId": 180,
+        "UnitAbbreviation": "703 AMXS"
+    },
+    {
+        "Name": "3 Maintenance Squadron",
+        "ParentId": 180,
+        "UnitAbbreviation": "3 MXS"
+    },
+    {
+        "Name": "3 Munitions Squadron",
+        "ParentId": 180,
+        "UnitAbbreviation": "3 MUNS"
+    },
+    {
+        "Name": "3 Maintenance Operations Squadron",
+        "ParentId": 180,
+        "UnitAbbreviation": "3 MOS"
+    },
+    {
+        "Name": "18 Aggressor Squadron",
+        "ParentId": 184,
+        "UnitAbbreviation": "18 AS"
+    },
+    {
+        "Name": "354 Operations Support Squadron",
+        "ParentId": 184,
+        "UnitAbbreviation": "354 OSS"
+    },
+    {
+        "Name": "354 Aircraft Maintenance Squadron",
+        "ParentId": 185,
+        "UnitAbbreviation": "354 AMXS"
+    },
+    {
+        "Name": "354 Maintenance Squadron",
+        "ParentId": 185,
+        "UnitAbbreviation": "354 MXS"
+    },
+    {
+        "Name": "354 Civil Engineer Squadron",
+        "ParentId": 186,
+        "UnitAbbreviation": "354 CES"
+    },
+    {
+        "Name": "354 Communications Squadron",
+        "ParentId": 186,
+        "UnitAbbreviation": "354 CS"
+    },
+    {
+        "Name": "354 Contracting Squadron",
+        "ParentId": 186,
+        "UnitAbbreviation": "354 CONS"
+    },
+    {
+        "Name": "354 Force Support Squadron",
+        "ParentId": 186,
+        "UnitAbbreviation": "354 FSS"
+    },
+    {
+        "Name": "354 Logistics Readiness Squadron",
+        "ParentId": 186,
+        "UnitAbbreviation": "354 LRS"
+    },
+    {
+        "Name": "354 Security Forces Squadron",
+        "ParentId": 186,
+        "UnitAbbreviation": "354 SFS"
+    },
+    {
+        "Name": "36 Maintenance Squadron",
+        "ParentId": 189,
+        "UnitAbbreviation": "36 MS"
+    },
+    {
+        "Name": "36 Munitions Squadron",
+        "ParentId": 189,
+        "UnitAbbreviation": "36 MUNS"
+    },
+    {
+        "Name": "36 Mobility Response Squadron",
+        "ParentId": 190,
+        "UnitAbbreviation": "36 MRS"
+    },
+    {
+        "Name": "554 RED HORSE Squadron",
+        "ParentId": 190,
+        "UnitAbbreviation": "554 RED HORSE"
+    },
+    {
+        "Name": "644 Combat Communications Squadron",
+        "ParentId": 190,
+        "UnitAbbreviation": "644 CCS"
+    },
+    {
+        "Name": "736 Security Forces Squadron",
+        "ParentId": 190,
+        "UnitAbbreviation": "736 SFS"
+    },
+    {
+        "Name": "36 Civil Engineer Squadron",
+        "ParentId": 192,
+        "UnitAbbreviation": "36 CES"
+    },
+    {
+        "Name": "36 Communications Squadron",
+        "ParentId": 192,
+        "UnitAbbreviation": "36 CS"
+    },
+    {
+        "Name": "36 Contracting Squadron",
+        "ParentId": 192,
+        "UnitAbbreviation": "36 CONS"
+    },
+    {
+        "Name": "36 Force Support Squadron",
+        "ParentId": 192,
+        "UnitAbbreviation": "36 FSS"
+    },
+    {
+        "Name": "36 Logistics Readiness Squadron",
+        "ParentId": 192,
+        "UnitAbbreviation": "36 LRS"
+    },
+    {
+        "Name": "36 Security Forces Squadron",
+        "ParentId": 192,
+        "UnitAbbreviation": "36 SFS"
+    },
+    {
+        "Name": "168 Air Refueling Squadron",
+        "ParentId": 196,
+        "UnitAbbreviation": "168 ARS"
+    },
+    {
+        "Name": "168 Operations Support Flight",
+        "ParentId": 196,
+        "UnitAbbreviation": "168 OSF"
+    },
+    {
+        "Name": "168 Aircraft Maintenance Squadron",
+        "ParentId": 197,
+        "UnitAbbreviation": "168 AMXS"
+    },
+    {
+        "Name": "168 Maintenance Squadron",
+        "ParentId": 197,
+        "UnitAbbreviation": "168 MXS"
+    },
+    {
+        "Name": "168 Maintenance Operations Flight",
+        "ParentId": 197,
+        "UnitAbbreviation": "168 MOS"
+    },
+    {
+        "Name": "168 Logistics Readiness Squadron",
+        "ParentId": 198,
+        "UnitAbbreviation": "168 LRS"
+    },
+    {
+        "Name": "168 Security Forces Squadron",
+        "ParentId": 198,
+        "UnitAbbreviation": "168 SFS"
+    },
+    {
+        "Name": "168 Communications Flight",
+        "ParentId": 198,
+        "UnitAbbreviation": "168 CF"
+    },
+    {
+        "Name": "168 Force Support Flight",
+        "ParentId": 198,
+        "UnitAbbreviation": "168 FSF"
+    },
+    {
+        "Name": "168 Comptroller Flight",
+        "ParentId": 49,
+        "UnitAbbreviation": "168 CPTF"
+    },
+    {
+        "Name": "144 Airlift Squadron",
+        "ParentId": 201,
+        "UnitAbbreviation": "144 AS"
+    },
+    {
+        "Name": "249 Airlift Squadron",
+        "ParentId": 201,
+        "UnitAbbreviation": "249 AS"
+    },
+    {
+        "Name": "210 Rescue Squadron",
+        "ParentId": 201,
+        "UnitAbbreviation": "210 RS"
+    },
+    {
+        "Name": "211 Rescue Squadron",
+        "ParentId": 201,
+        "UnitAbbreviation": "211 RS"
+    },
+    {
+        "Name": "212 Rescue Squadron",
+        "ParentId": 201,
+        "UnitAbbreviation": "212 RS"
+    },
+    {
+        "Name": "176 Air Defense Squadron",
+        "ParentId": 201,
+        "UnitAbbreviation": "176 ADS"
+    },
+    {
+        "Name": "176 Operations Support Squadron",
+        "ParentId": 201,
+        "UnitAbbreviation": "176 OSS"
+    },
+    {
+        "Name": "176 Aircraft Maintenance Squadron",
+        "ParentId": 202,
+        "UnitAbbreviation": "176 AMXS"
+    },
+    {
+        "Name": "176 Maintenance Squadron",
+        "ParentId": 202,
+        "UnitAbbreviation": "176 MXS"
+    },
+    {
+        "Name": "176 Maintenance Operations Flight",
+        "ParentId": 202,
+        "UnitAbbreviation": "176 MOS"
+    },
+    {
+        "Name": "176 Civil Engineer Squadron",
+        "ParentId": 203,
+        "UnitAbbreviation": "176 CES"
+    },
+    {
+        "Name": "176 Force Support Squadron",
+        "ParentId": 203,
+        "UnitAbbreviation": "176 FSS"
+    },
+    {
+        "Name": "176 Logistics Readiness Squadron",
+        "ParentId": 203,
+        "UnitAbbreviation": "176 LRS"
+    },
+    {
+        "Name": "176 Security Forces Squadron",
+        "ParentId": 203,
+        "UnitAbbreviation": "176 SFS"
+    },
+    {
+        "Name": "176 Communications Flight",
+        "ParentId": 203,
+        "UnitAbbreviation": "176 CF"
+    },
+    {
+        "Name": "Unknown"
+    },
+    {
+        "Name": "PACAF Air Postal Squadron",
+        "ParentId": 3
+    },
+    {
+        "Name": "United States Special Operations Command",
+        "ParentId": 1
+    },
+    {
+        "Name": "Air Force Special Operations Command",
+        "ParentId": 347
+    },
+    {
+        "Name": "353 Special Operations Group",
+        "ParentId": 348,
+        "UnitAbbreviation": "353 SOG"
+    },
+    {
+        "Name": "1 Special Operations Squadron",
+        "ParentId": 349,
+        "UnitAbbreviation": "1 SOS"
+    },
+    {
+        "Name": "17 Special Operations Squadron",
+        "ParentId": 349,
+        "UnitAbbreviation": "17 SOS"
+    },
+    {
+        "Name": "320 Special Tactics Squadron",
+        "ParentId": 349,
+        "UnitAbbreviation": "320 STS"
+    },
+    {
+        "Name": "353 Special Operations Maintenance Squadron",
+        "ParentId": 349,
+        "UnitAbbreviation": "353 SOMXS"
+    },
+    {
+        "Name": "353 Special Operations Support Squadron",
+        "ParentId": 349,
+        "UnitAbbreviation": "353 SOSS"
+    },
+    {
+        "Name": "Air Mobility Command",
+        "ParentId": 1,
+        "UnitAbbreviation": "AMC"
+    },
+    {
+        "Name": "515 Air Mobility Operations Wing",
+        "ParentId": 355,
+        "UnitAbbreviation": "515 AMOW"
+    },
+    {
+        "Name": "515 Air Mobility Operations Group",
+        "ParentId": 356,
+        "UnitAbbreviation": "515 AMOG"
+    },
+    {
+        "Name": "733 Air Mobility Squadron",
+        "ParentId": 357,
+        "UnitAbbreviation": "733 AMS"
+    },
+    {
+        "Name": "Air Combat Command",
+        "ParentId": 1,
+        "UnitAbbreviation": "ACC"
+    },
+    {
+        "Name": "55 Wing",
+        "ParentId": 359,
+        "UnitAbbreviation": "55 WG"
+    },
+    {
+        "Name": "55 Operations Group",
+        "ParentId": 360,
+        "UnitAbbreviation": "55 OG"
+    },
+    {
+        "Name": "82 Reconnaissance Squadron",
+        "ParentId": 361,
+        "UnitAbbreviation": "82 RS"
+    },
+    {
+        "Name": "390 Intelligence Squadron",
+        "ParentId": 361,
+        "UnitAbbreviation": "390 IS"
+    },
+    {
+        "Name": "43 Intelligence Squadron",
+        "ParentId": 349,
+        "UnitAbbreviation": "43 IS"
+    },
+    {
+        "Name": "Space Force",
+        "ParentId": 1,
+        "UnitAbbreviation": "USSF"
+    },
+    {
+        "Name": "Unknown",
+        "ParentId": 1,
+        "UnitAbbreviation": "UNK"
+    },
+    {
+        "Name": "18 Comptroller Squadron",
+        "ParentId": 33,
+        "UnitAbbreviation": "18 CPTS"
+    },
+    {
+        "Name": "Veterinary Services",
+        "ParentId": 2
+    },
+    {
+        "Name": "2nd Battalion, 6th Air Defense Artillery Brigade",
+        "ParentId": 141,
+        "UnitAbbreviation": "BTY A (2-6 ADA) PP"
+    },
+    {
+        "Name": "Marine Wing Headquarters Squadron 1",
+        "ParentId": 89,
+        "UnitAbbreviation": "MWHS1"
+    },
+    {
+        "Name": "1 Marine Aircraft Wing Iwakuni",
+        "ParentId": 89,
+        "UnitAbbreviation": "1 MAW IWAKUNI"
+    },
+    {
+        "Name": "1 Marine Aircraft Wing Kaneohe Bay",
+        "ParentId": 89,
+        "UnitAbbreviation": "1 MAW KANEOHE BAY"
+    },
+    {
+        "Name": "1 Marine Aircraft Wing Futenma",
+        "ParentId": 89,
+        "UnitAbbreviation": "1 MAW FUTENMA"
+    },
+    {
+        "Name": "Defense Media Activity",
+        "ParentId": 1,
+        "UnitAbbreviation": "DMA"
+    },
+    {
+        "Name": "DOD Education Activity",
+        "ParentId": 1,
+        "UnitAbbreviation": "DODEA"
+    },
+    {
+        "Name": "AAFES",
+        "ParentId": 1,
+        "UnitAbbreviation": "AAFES"
+    },
+    {
+        "Name": "718 Force Support Squadron",
+        "ParentId": 160,
+        "UnitAbbreviation": "718 FSS"
+    },
+    {
+        "Name": "Defense Commissary Agency",
+        "ParentId": 1,
+        "UnitAbbreviation": "DeCA"
+    }
+]

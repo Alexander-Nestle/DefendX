@@ -1,0 +1,42 @@
+.card-container {
+  height: 75%;
+  width: 100%;
+  padding-bottom: 1%
+}
+
+.card {
+    max-width: 50%;
+    background-color: #212121;
+  }
+  
+  .image-center {
+    /* position: absolute; */
+    left: 25%;
+    top: 25%;
+    max-width: 50%;
+    max-height: 100%;
+    min-height: 410px;
+    /* margin-bottom: 100%; */
+    z-index: 10000;
+  }
+
+
+.header-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    max-width: 800px;
+    max-height: 260px;
+    width: 90%;   
+    height: 90%; 
+}
+  
+  .footer {
+    position: absolute;
+    bottom: 0%;
+    font-size: 10px;
+    color: #8a8a8a !important;
+    background-color: #212121;
+    width: 100%
+}

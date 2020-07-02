@@ -1,0 +1,184 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}  
+
+html {
+    overflow-y: scroll
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-light {
+    color: white;
+  }
+
+  .text-error {
+    color: #D50000
+  }
+
+  h1, h2, h3, h4, h5, p {
+    color: #424242;
+  }
+
+  .form {
+    width: 95%;
+    margin: 50px auto 0 auto;
+}
+
+  .dark-container {          
+    width: 100%;   
+    height: 100%; 
+    top: 0;
+    left: 0;
+    background: #303030; 
+    position: fixed;
+    z-index: -10000;
+}
+
+.dark-background {
+  background-color: #303030 !important;
+}
+
+.light-container {          
+  width: 100%;   
+  height: 100%; 
+  left: 0;
+  top: 0;
+  background: #F5F5F5; 
+  position: fixed;
+  z-index: -10000;
+}
+
+.light-background {
+  background-color: #F5F5F5;
+}
+
+#content {
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+/* Deprecated */
+.spinner-container {
+  position: absolute;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.15);
+  top: 56px;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Deprecated */
+.spinner-container mat-spinner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center Spinner on entire screen */
+.loading-indicator-absolute {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* position absolute is relative to first parent with position other than static (default) */
+.loading-indicator {
+  position: absolute !important;
+  z-index: 1; 
+  left: 0;
+  right: 0; 
+  top: 0; 
+  bottom: 0;
+  margin: auto
+}
+
+.center-inline {
+  margin: 0 auto;
+}
+
+.loading-dark-background {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.button-space-left {
+  margin-left: 1%
+}
+
+.fullWidth-field {
+  width: 100%;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 !important;
+}
+
+table {
+  width: 100%;
+}
+
+.table-container {
+  height: 25rem;
+  overflow: auto;
+}
+
+.mat-row:hover, tbody tr:hover {
+  background-color: #EEEEEE;
+}
+
+.text-inside-grid-header-left {
+    position: absolute;
+    left: 5px;
+    /* top: 0px; */
+  }
+
+  .text-inside-grid-header-right {
+    position: absolute;
+    right: 5px;
+    /* top: 0px; */
+  }
+
+  .text-inside-grid-content-left {
+    position: absolute;
+    left: 10%;
+    /* display: table-cell; */
+    /* vertical-align: bottom; */
+  }
+
+  .text-inside-grid-content-right {
+    position: absolute;
+    right: 10px;
+    /* display: table-cell; */
+    /* vertical-align: bottom; */
+  }
+
+  .component-bottom {
+    position: absolute;
+    bottom: 1px;
+  }
+
+  .component-top {
+    position: absolute;
+    top: 1px;
+  }
+
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }

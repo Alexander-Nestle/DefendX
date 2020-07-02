@@ -1,0 +1,536 @@
+[
+  {
+    "ServiceId": 1,
+    "Name": "AB",
+    "Tier": "E",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 1,
+    "Name": "Amn",
+    "Tier": "E",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 1,
+    "Name": "A1C",
+    "Tier": "E",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 1,
+    "Name": "SrA",
+    "Tier": "E",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 1,
+    "Name": "SSgt",
+    "Tier": "E",
+    "Grade": 5
+  },
+  {
+    "ServiceId": 1,
+    "Name": "TSgt",
+    "Tier": "E",
+    "Grade": 6
+  },
+  {
+    "ServiceId": 1,
+    "Name": "MSgt",
+    "Tier": "E",
+    "Grade": 7
+  },
+  {
+    "ServiceId": 1,
+    "Name": "SMSgt",
+    "Tier": "E",
+    "Grade": 8
+  },
+  {
+    "ServiceId": 1,
+    "Name": "CMSgt",
+    "Tier": "E",
+    "Grade": 9
+  },
+  {
+    "ServiceId": 1,
+    "Name": "2LT",
+    "Tier": "O",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 1,
+    "Name": "1LT",
+    "Tier": "O",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 1,
+    "Name": "CPT",
+    "Tier": "O",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 1,
+    "Name": "MAJ",
+    "Tier": "O",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 1,
+    "Name": "LTC",
+    "Tier": "O",
+    "Grade": 5    
+  },
+  {
+    "ServiceId": 1,
+    "Name": "COL",
+    "Tier": "O",
+    "Grade": 6
+  },
+  {
+    "ServiceId": 1,
+    "Name": "BG",
+    "Tier": "O",
+    "Grade": 7
+  },
+  {
+    "ServiceId": 1,
+    "Name": "MG",
+    "Tier": "O",
+    "Grade": 8
+  },
+  {
+    "ServiceId": 1,
+    "Name": "LTG",
+    "Tier": "O",
+    "Grade": 9
+  },
+  {
+    "ServiceId": 1,
+    "Name": "GEN",
+    "Tier": "O",
+    "Grade": 10
+  },
+  {
+    "ServiceId": 2,
+    "Name": "PV1",
+    "Tier": "E",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 2,
+    "Name": "PV2",
+    "Tier": "E",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 2,
+    "Name": "PFC",
+    "Tier": "E",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 2,
+    "Name": "SPC",
+    "Tier": "E",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 2,
+    "Name": "SGT",
+    "Tier": "E",
+    "Grade": 5
+  },
+  {
+    "ServiceId": 2,
+    "Name": "SSG",
+    "Tier": "E",
+    "Grade": 6
+  },
+  {
+    "ServiceId": 2,
+    "Name": "SFC",
+    "Tier": "E",
+    "Grade": 7
+  },
+  {
+    "ServiceId": 2,
+    "Name": "MSG",
+    "Tier": "E",
+    "Grade": 8
+  },
+  {
+    "ServiceId": 2,
+    "Name": "SGM",
+    "Tier": "E",
+    "Grade": 9
+  },
+  {
+    "ServiceId": 2,
+    "Name": "2LT",
+    "Tier": "O",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 2,
+    "Name": "1LT",
+    "Tier": "O",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 2,
+    "Name": "CPT",
+    "Tier": "O",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 2,
+    "Name": "MAJ",
+    "Tier": "O",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 2,
+    "Name": "LTC",
+    "Tier": "O",
+    "Grade": 5
+  },
+  {
+    "ServiceId": 2,
+    "Name": "COL",
+    "Tier": "O",
+    "Grade": 6
+  },
+  {
+    "ServiceId": 2,
+    "Name": "BG",
+    "Tier": "O",
+    "Grade": 7
+  },
+  {
+    "ServiceId": 2,
+    "Name": "MG",
+    "Tier": "O",
+    "Grade": 8
+  },
+  {
+    "ServiceId": 2,
+    "Name": "LTG",
+    "Tier": "O",
+    "Grade": 9
+  },
+  {
+    "ServiceId": 2,
+    "Name": "GEN",
+    "Tier": "O",
+    "Grade": 10
+  },
+  {
+    "ServiceId": 2,
+    "Name": "W01",
+    "Tier": "W",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 2,
+    "Name": "CW2",
+    "Tier": "W",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 2,
+    "Name": "CW3",
+    "Tier": "W",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 2,
+    "Name": "CW4",
+    "Tier": "W",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 2,
+    "Name": "CW5",
+    "Tier": "W",
+    "Grade": 5
+  },
+  {
+    "ServiceId": 3,
+    "Name": "SR",
+    "Tier": "E",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 3,
+    "Name": "SA",
+    "Tier": "E",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 3,
+    "Name": "SN",
+    "Tier": "E",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 3,
+    "Name": "PO3",
+    "Tier": "E",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 3,
+    "Name": "PO2",
+    "Tier": "E",
+    "Grade": 5
+  },
+  {
+    "ServiceId": 3,
+    "Name": "PO1",
+    "Tier": "E",
+    "Grade": 6
+  },
+  {
+    "ServiceId": 3,
+    "Name": "CPO",
+    "Tier": "E",
+    "Grade": 7
+  },
+  {
+    "ServiceId": 3,
+    "Name": "SCPO",
+    "Tier": "E",
+    "Grade": 8
+  },
+  {
+    "ServiceId": 3,
+    "Name": "MCPO",
+    "Tier": "E",
+    "Grade": 9
+  },
+  {
+    "ServiceId": 3,
+    "Name": "ENS",
+    "Tier": "O",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 3,
+    "Name": "LTJG",
+    "Tier": "O",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 3,
+    "Name": "LT",
+    "Tier": "O",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 3,
+    "Name": "LCDR",
+    "Tier": "O",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 3,
+    "Name": "CDR",
+    "Tier": "O",
+    "Grade": 5
+  },
+  {
+    "ServiceId": 3,
+    "Name": "CAPT",
+    "Tier": "O",
+    "Grade": 6
+  },
+  {
+    "ServiceId": 3,
+    "Name": "RADM(L)",
+    "Tier": "O",
+    "Grade": 7
+  },
+  {
+    "ServiceId": 3,
+    "Name": "RADM(U)",
+    "Tier": "O",
+    "Grade": 8
+  },
+  {
+    "ServiceId": 3,
+    "Name": "VADM",
+    "Tier": "O",
+    "Grade": 9
+  },
+  {
+    "ServiceId": 3,
+    "Name": "ADM",
+    "Tier": "O",
+    "Grade": 10
+  },
+  {
+    "ServiceId": 3,
+    "Name": "CW02",
+    "Tier": "W",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 3,
+    "Name": "CW03",
+    "Tier": "W",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 3,
+    "Name": "CW04",
+    "Tier": "W",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 4,
+    "Name": "Pvt",
+    "Tier": "E",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 4,
+    "Name": "PFC",
+    "Tier": "E",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 4,
+    "Name": "LCpl",
+    "Tier": "E",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 4,
+    "Name": "Cpl",
+    "Tier": "E",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 4,
+    "Name": "Sgt",
+    "Tier": "E",
+    "Grade": 5
+  },
+  {
+    "ServiceId": 4,
+    "Name": "SSgt",
+    "Tier": "E",
+    "Grade": 6
+  },
+  {
+    "ServiceId": 4,
+    "Name": "GySgt",
+    "Tier": "E",
+    "Grade": 7
+  },
+  {
+    "ServiceId": 4,
+    "Name": "MSgt",
+    "Tier": "E",
+    "Grade": 8
+  },
+  {
+    "ServiceId": 4,
+    "Name": "MGySgt",
+    "Tier": "E",
+    "Grade": 9
+  },
+  {
+    "ServiceId": 4,
+    "Name": "2LT",
+    "Tier": "O",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 4,
+    "Name": "1LT",
+    "Tier": "O",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 4,
+    "Name": "CPT",
+    "Tier": "O",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 4,
+    "Name": "MAJ",
+    "Tier": "O",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 4,
+    "Name": "LTC",
+    "Tier": "O",
+    "Grade": 5
+  },
+  {
+    "ServiceId": 4,
+    "Name": "COL",
+    "Tier": "O",
+    "Grade": 6
+  },
+  {
+    "ServiceId": 4,
+    "Name": "BG",
+    "Tier": "O",
+    "Grade": 7
+  },
+  {
+    "ServiceId": 4,
+    "Name": "MG",
+    "Tier": "O",
+    "Grade": 8
+  },
+  {
+    "ServiceId": 4,
+    "Name": "LTG",
+    "Tier": "O",
+    "Grade": 9
+  },
+  {
+    "ServiceId": 4,
+    "Name": "GEN",
+    "Tier": "O",
+    "Grade": 10
+  },
+  {
+    "ServiceId": 4,
+    "Name": "WO",
+    "Tier": "W",
+    "Grade": 1
+  },
+  {
+    "ServiceId": 4,
+    "Name": "CW02",
+    "Tier": "W",
+    "Grade": 2
+  },
+  {
+    "ServiceId": 4,
+    "Name": "CW03",
+    "Tier": "W",
+    "Grade": 3
+  },
+  {
+    "ServiceId": 4,
+    "Name": "CW04",
+    "Tier": "W",
+    "Grade": 4
+  },
+  {
+    "ServiceId": 4,
+    "Name": "CW05",
+    "Tier": "W",
+    "Grade": 5
+  }
+]

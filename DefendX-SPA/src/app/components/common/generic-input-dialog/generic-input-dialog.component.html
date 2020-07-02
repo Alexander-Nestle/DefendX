@@ -1,0 +1,25 @@
+<div class="container-fluid mat-form-field">
+  <div>
+    <h1 mat-dialog-title class="text-align-center">{{data.title}}</h1>
+  </div>
+  <div class="row">
+    <mat-dialog-content class="mat-form-field" [formGroup]="form">
+
+      <mat-form-field class="mat-form-field">
+        <input matInput placeholder="{{ data.type === InputDialogTypes.Ticket ? 'Subject' : 'Question'}}" formControlName="subject">
+      </mat-form-field>
+      <br />
+      <mat-form-field>
+        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3" cdkAutosizeMaxRows="5" placeholder="{{ data.type === InputDialogTypes.Ticket ? 'Describe your issue.' : 'Answer' }}"
+          formControlName="description"></textarea>
+      </mat-form-field>
+
+    </mat-dialog-content>
+    <mat-dialog-actions class="mat-form-field">
+      <div class="text-align-center mat-form-field">
+        <button mat-stroked-button (click)="onCancel()">Back</button>
+        <button mat-raised-button color="accent" (click)="onSubmit()" [disabled]="!form.valid || submitLoading" type="submit" style="margin-left: 30px">{{submitLoading ? 'Loading...' : 'Submit'}}</button>
+      </div>
+    </mat-dialog-actions>
+  </div>
+</div>

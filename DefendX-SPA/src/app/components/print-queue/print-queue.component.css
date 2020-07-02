@@ -1,0 +1,26 @@
+.removeButton {
+    visibility: hidden;
+}
+
+tr:hover .removeButton {
+    visibility: visible;
+}
+
+.size-18 {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 500px; 
+    overflow-y: scroll; 
+    display: block;
+    width: auto;
+}
+
+.not-auth {
+    color: #D50000;
+}

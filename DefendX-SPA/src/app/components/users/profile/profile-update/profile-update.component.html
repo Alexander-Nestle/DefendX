@@ -1,0 +1,227 @@
+<div class="row">
+  <h1 class="col-sm-12 col-md-12 col-lg-12">User Profile</h1>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <a mat-button routerLink="/licenses" href="" color="$mat-blue">View Licenses</a>
+    <i class="material-icons md-24" style="vertical-align:middle">keyboard_arrow_right</i>
+    <a mat-button routerLink="/users/profile" href="" color="$mat-blue">Profile</a>
+    <i class="material-icons md-24" style="vertical-align:middle">keyboard_arrow_right</i>
+    <a mat-button routerLink="." href="" color="$mat-blue">Edit Profile</a>
+  </div>
+</div>
+
+<div class="row">
+  <form [formGroup]="form" class="form" (ngSubmit)="onSubmit()">
+    <div class="row">
+
+  <!-- Left Column -->
+  <div class="col-sm-5 col-md-5 col-lg-5">
+    <div class="container">
+      <br/>
+      <!-- Personal Information -->
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Personal Information</mat-card-title>
+            </mat-card-header>
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-3 offset-sm-1 offset-md-1 offset-lg-1">
+                <p><strong>First Name: </strong></p>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <p>{{ currentUser?.firstName }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-3 offset-sm-1 offset-md-1 offset-lg-1">
+                <p><strong>Middle Initial: </strong></p>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <p>{{ currentUser?.middleInitial }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-3 offset-sm-1 offset-md-1 offset-lg-1">
+                <p><strong>Last Name: </strong></p>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                  <p>{{ currentUser?.lastName }}</p>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+      <br/>
+      <!-- Service Information -->
+      <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>Service Information</mat-card-title>
+              </mat-card-header>
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-3 offset-sm-1 offset-md-1 offset-lg-1">
+                  <p><strong>DoD ID: </strong></p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <p>{{ currentUser?.dodId }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9 col-md-9 col-lg-8 offset-sm-1 offset-md-1 offset-lg-1">
+                  <mat-form-field class="fullWidth-field">
+                    <mat-select placeholder="Service" formControlName="serviceId">
+                      <mat-option *ngFor="let service of services" [value]="service.id">
+                        {{service.name}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9 col-md-9 col-lg-8 offset-sm-1 offset-md-1 offset-lg-1">
+                  <mat-form-field class="fullWidth-field">
+                    <mat-select placeholder="Rank" formControlName="rankId">
+                      <mat-option *ngFor="let rank of ranks" [value]="rank.id">
+                        {{rank.name}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+
+                <div class="row">
+                  <div class="col-sm-9 col-md-9 col-lg-8 offset-sm-1 offset-md-1 offset-lg-1">
+                    <div *ngIf="!isAdmin; else editUnit">
+                      <p><strong>Unit: </strong></p>
+                      <div class="col-sm-4 col-md-4 col-lg-4">
+                        <p>{{ currentUser?.unit?.name }}</p>
+                      </div>
+                    </div>
+                    <ng-template #editUnit>
+                      <mat-form-field class="fullWidth-field">
+                        <input type="text" placeholder="Unit" matInput formControlName="unitId" [matAutocomplete]="unit">
+                        <mat-autocomplete #unit="matAutocomplete" [displayWith]="onDisplayUnit">
+                          <mat-option *ngFor="let unit of units$ | async" [value]="unit">{{unit.name}}</mat-option>
+                        </mat-autocomplete>
+                      </mat-form-field>
+                    </ng-template>
+                  </div>
+              </div>
+            </mat-card>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="col-sm-1 col-md-1 col-lg-1">
+    <mat-divider
+      [vertical]="true"
+      style="height:100%; margin-right: 50%">
+    </mat-divider>
+  </div>
+
+  <!-- Right Column -->
+  <div class="col-sm-5 col-md-5 col-lg-5">
+    <div class="container">
+      <br />
+
+      <!-- Account Information -->
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Account Information</mat-card-title>
+            </mat-card-header>
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-3 offset-sm-1 offset-md-1 offset-lg-1">
+                <p><strong>Account Type: </strong></p>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <p>{{ currentUser?.account?.accountType?.type }}</p>
+              </div>
+            </div>  
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-3 offset-sm-1 offset-md-1 offset-lg-1">
+                <p><strong>Date Created: </strong></p>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <p>{{ currentUser?.account?.dateCreated | date }}</p>
+              </div>
+            </div>
+            <div *ngIf="isAdmin">
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-3 offset-sm-1 offset-md-1 offset-lg-1">
+                  <p><strong>Signature:</strong></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-3 offset-sm-1 offset-md-1 offset-lg-1">
+                  <canvas id="cnv" name="cnv" #cnv width="500" height="100"></canvas>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 offset-sm-1 offset-md-1 offset-lg-1">
+                  <a mat-stroked-button href="defendxsig:">Sign</a>
+                  <input type="file" #file style="display: none" (change)="onSigFileSelected($event)" accept=".sig" />
+                  <button mat-stroked-button type="button" (click)="onUploadSigBtnClick()" style="margin-left: 30px">Upload Signature</button>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+      <br/>
+      <!-- Contact Information -->
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Contact Information</mat-card-title>
+            </mat-card-header>
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-8 offset-sm-1 offset-md-1 offset-lg-1">
+                <mat-form-field class="fullWidth-field">
+                  <input matInput placeholder="Email" formControlName="email" maxlength="50">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-8 offset-sm-1 offset-md-1 offset-lg-1">
+                <mat-form-field class="fullWidth-field">
+                  <input matInput placeholder="DSN Phone" formControlName="dsnPhone" maxlength="20">
+                </mat-form-field>
+              </div>        
+            </div>    
+            <div class="row">
+              <div class="col-sm-9 col-md-9 col-lg-8 offset-sm-1 offset-md-1 offset-lg-1">
+                <mat-form-field class="fullWidth-field">
+                  <input matInput placeholder="Comm Phone" formControlName="commPhone" maxlength="20">
+                </mat-form-field>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br/>
+    <div class="row">
+      <div class="col-sm-11 col-md-11 col-lg-11">
+        <mat-card>
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 offset-sm-3 offset-md-4 offset-lg-4 offset-xl-5">
+              <button mat-stroked-button routerLink="/users/profile" href="">Back</button>
+              <button mat-raised-button color="accent" type="submit" [disabled]="submitLoading" style="margin-left: 30px">{{submitLoading ? 'Loading...' : 'Submit'}}</button>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </form>
+</div>

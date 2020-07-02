@@ -1,0 +1,43 @@
+
+  <!-- TODO get rid of the container and cimply use bootstrap grid -->
+  <div class="dark-container" style="display: block"> 
+      <div class="card-container">
+    <mat-card class="card image-center login-form">
+      <img mat-card-image class="header-image" src="../../../../assets/logo/light/L.PNG">
+      <mat-card-title class="text-center text-light" style="font-size: 2.5rem">SOFA License Tracking System</mat-card-title>
+      <br>
+      <mat-card-actions>
+        <button style="width: 100%; height: 100%; font-size: 1.5em" [disabled]="loading"  mat-raised-button color="accent" (click)="logIn()">{{loading ? 'Loading...' :'Sign In'}}</button>
+      </mat-card-actions>
+    </mat-card>
+    </div>
+    <div class="footer">
+      <div style="margin: 1%">
+          <div>
+              <h5 style="color: #8a8a8a">Warning Notice and Consent to Monitor</h5>
+              <p style="color: #8a8a8a">
+                  You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+                  <br>
+                  <br> By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+              </p>
+              <ul>
+                  <li>The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited
+                      to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct
+                      (PM), law enforcement (LE), and counterintelligence (CI) investigations.</li>
+                  <li>At any time, the USG may inspect and seize data stored on this IS.</li>
+                  <li>Communications using, or data stored on, this IS are not private, are subject to routine monitoring,
+                      interception, and search, and may be disclosed or used for any USG-authorized purpose.</li>
+                  <li>This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not
+                      for your personal benefit or privacy.</li>
+                  <li>Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching
+                      or monitoring of the content of privileged communications, or work product, related to personal representation
+                      or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications
+                      and work product are private and confidential. See User Agreement for details.</li>
+              </ul>
+          </div>
+
+      </div>
+  </div>
+  </div>
+
+

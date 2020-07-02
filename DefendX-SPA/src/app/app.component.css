@@ -1,0 +1,14 @@
+.printQueue {
+    width: auto;
+    position: fixed;
+    z-index: 999;
+    bottom:0;
+    right:0;
+  }
+
+  .progressBar {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top:0;
+  }

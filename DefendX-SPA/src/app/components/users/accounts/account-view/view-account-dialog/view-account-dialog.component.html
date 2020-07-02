@@ -1,0 +1,95 @@
+<div *ngIf="retrievedUser; else loading" mat-dialog-content>
+  <form
+    [formGroup]="form"
+    class="form"
+    (ngSubmit)="onSubmit()"
+    (keydown.enter)="$event.preventDefault()"
+  >
+    <mat-grid-list cols="8" rowHeight="10px">
+      <mat-grid-tile [colspan]="4" [rowspan]="5">
+        <div class="text-inside-grid-header-left">
+          <h3>
+            {{ retrievedUser?.firstName + " " + retrievedUser?.lastName }}
+          </h3>
+        </div>
+      </mat-grid-tile>
+
+      <div>
+        <mat-grid-tile [colspan]="8" [rowspan]="2">
+          <mat-divider
+            class="hr component-top"
+            style="width: 100%;"
+          ></mat-divider>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>DoD ID</h5>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>Last Login Date</h5>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4"> </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>Account Type</h5>
+          </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="6">
+          <p>{{ retrievedUser?.dodId }}</p>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="6">
+          <p>{{ retrievedUser?.account?.lastLoginDate | date: "medium" }}</p>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="6"> </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="6">
+          <mat-form-field class="fullWidth-field">
+            <mat-select
+              formControlName="accountTypeId"
+            >
+              <mat-option
+                *ngFor="let accountType of (accountTypes$ | async)"
+                [value]="accountType.id"
+              >
+                {{ accountType.type }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="6" [rowspan]="6"></mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="6"> 
+            <mat-form-field class="fullWidth-field">
+                <input type="text" placeholder="Unit" matInput formControlName="unitId" [matAutocomplete]="unit">
+                <mat-autocomplete #unit="matAutocomplete" [displayWith]="onDisplayUnit">
+                  <mat-option *ngFor="let unit of units$ | async" [value]="unit">{{unit.name}}</mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="8" [rowspan]="4">
+          <button mat-stroked-button mat-dialog-close>Cancel</button>
+          <button
+            mat-raised-button
+            color="accent"
+            style="margin-left: 1%"
+            [disabled]="loading$ | async"
+            type="submit"
+          >
+            Submit
+          </button>
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+  </form>
+</div>
+
+<ng-template #loading>
+  <div class="spinner-container-inline" *ngIf="(loading$ | async)">
+    <mat-spinner color="accent"></mat-spinner>
+  </div>
+</ng-template>

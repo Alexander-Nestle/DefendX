@@ -1,0 +1,27 @@
+<br>
+<div class="row search-bar ">
+
+  <div class="col-sm-3 col-md-2 col-lg-2 col-xl-1">
+    <button mat-raised-button color="accent" style="margin-top: 1rem" (click)="onAddLicense()">Add License</button>
+  </div>
+
+  <div class="col-sm-9 col-md-10 col-lg-10 col-xl-11">
+    <form [formGroup]="form" class="search-bar" *ngIf="!(isBasicUser$ | async)">
+
+      <mat-form-field appearance="outline" style="width: 95%">
+        <input matInput placeholder="Enter Name or Dod ID" formControlName="search">
+        <mat-label>Search</mat-label>
+      </mat-form-field>
+
+      <button mat-icon-button color="primary" (click)="onSearch()" [disabled]="!form.valid">
+        <i class="material-icons md-24">search</i>
+      </button>
+
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <app-license-view [queryString]=search></app-license-view>
+  </div>
+</div>

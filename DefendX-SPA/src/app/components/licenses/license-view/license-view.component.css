@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+  }
+
+  .table-container {
+    height: 25rem;
+    overflow: auto;
+  }
+
+.mat-column-select {
+  overflow: initial;
+}

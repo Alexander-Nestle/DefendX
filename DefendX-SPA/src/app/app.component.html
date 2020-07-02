@@ -1,0 +1,9 @@
+<mat-progress-bar class="progressBar" mode="determinate" [value]="progress" color="accent" *ngIf="progress != 0 && progress != 100"></mat-progress-bar>
+<app-navbar *ngIf="isLoggedIn$ | async"></app-navbar>
+<div id="content">
+    <div class="container-fluid">
+        <router-outlet class="light-container"></router-outlet>
+        <app-print-queue *ngIf="isAdmin$ | async" class="printQueue"></app-print-queue>
+    </div>
+</div>
+<br><br>

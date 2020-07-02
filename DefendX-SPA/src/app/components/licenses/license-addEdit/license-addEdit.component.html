@@ -1,0 +1,249 @@
+<div class="row">
+  <h1 class="col-sm-12 col-md-12 col-lg-12" *ngIf="license; else add">Edit License</h1>
+  <ng-template #add>
+    <h1 class="col-sm-12 col-md-12 col-lg-12">Add License</h1>
+  </ng-template>
+
+</div>
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <a mat-button routerLink="/licenses" href="" color="$mat-blue">View Licenses</a>
+    <i class="material-icons md-24" style="vertical-align:middle">keyboard_arrow_right</i>
+    <a mat-button routerLink="." href="" color="$mat-blue">License</a>
+  </div>
+</div>
+<div class="row" *ngIf="isAdmin">
+  <div class="col-sm-3 col-md-3 col-lg-4 offset-sm-9 offset-md-9 offset-lg-8">
+    <button mat-button mat-button color="primary" (click)="pendingDLScan()">
+      <i class="material-icons md-24">directions_car</i>Scan Driver's License</button>
+    <button mat-button mat-button color="primary" (click)="pendingScan()">
+      <i class="material-icons md-24">credit_card</i>Scan DoD ID</button>
+  </div>
+</div>
+<div class="row">
+  <form [formGroup]="form" class="form" (ngSubmit)="onSubmit()" (keydown.enter)="$event.preventDefault()">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Personal Information</mat-card-title>
+      </mat-card-header>
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <mat-form-field class="fullWidth-field">
+            <input matInput placeholder="First Name" formControlName="firstName" required maxlength="50">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-1 col-md-1 col-lg-1">
+          <mat-form-field class="fullWidth-field">
+            <input matInput placeholder="MI" formControlName="middleInitial" maxlength="1">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <mat-form-field class="fullWidth-field">
+            <input matInput placeholder="Last Name" formControlName="lastName" required maxlength="50">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <mat-form-field>
+            <mat-select placeholder="Gender" formControlName="gender" required>
+              <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                {{gender.value}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-2">
+          <mat-form-field color="accent" class="fullWidth-field">
+            <input matInput [min]="minDobDate" [max]="maxDobDate" [matDatepicker]="picker" placeholder="Select DoB" formControlName="dob"
+              disabled required>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker disabled="false"></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-1 offset-sm-1 offset-md-1">
+          <mat-form-field class="fullWidth-field">
+            <span matSuffix>&nbsp; in.</span>
+            <input matInput placeholder="Height" formControlName="height" type="number" min="0" max="999" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+              required>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-1">
+          <mat-form-field class="fullWidth-field">
+            <span matSuffix>&nbsp; lbs</span>
+            <input matInput placeholder="Weight" formControlName="weight" type="number" min="0" max="999" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+              required>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 offset-sm-1 offset-md-1">
+          <mat-form-field class="fullWidth-field">
+            <input type="text" placeholder="Hair Color" matInput formControlName="hairColor" [matAutocomplete]="hairColor" required>
+          </mat-form-field>
+
+          <mat-autocomplete #hairColor="matAutocomplete">
+            <mat-option *ngFor="let hairColor of hairColors | filterOptions: form.get('hairColor').value: 'displayValue'" [value]="hairColor.abbreviation">{{hairColor.displayValue}}</mat-option>
+          </mat-autocomplete>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <mat-form-field class="fullWidth-field">
+            <input type="text" placeholder="Eye Color" matInput formControlName="eyeColor" [matAutocomplete]="eyeColor" required>
+          </mat-form-field>
+
+          <mat-autocomplete #eyeColor="matAutocomplete">
+            <mat-option *ngFor="let eyeColor of eyeColors | filterOptions: form.get('eyeColor').value: 'displayValue'" [value]="eyeColor.abbreviation">{{eyeColor.displayValue}}</mat-option>
+          </mat-autocomplete>
+        </div>
+      </div>
+    </mat-card>
+    <br>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Service Information</mat-card-title>
+      </mat-card-header>
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <mat-form-field class="fullWidth-field">
+            <input matInput placeholder="DoD ID" formControlName="dodId" type="number" [min]="DodId.MIN" [max]="DodId.MAX" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+              required>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <mat-form-field class="fullWidth-field">
+            <mat-select placeholder="Service" formControlName="serviceId" required>
+              <mat-option *ngFor="let service of services" [value]="service.id">
+                {{service.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="col-sm-3 col-md-3 col-lg-3" *ngIf="ranks !=null && ranks?.length != 0">
+          <mat-form-field class="fullWidth-field">
+            <mat-select placeholder="Rank" formControlName="rankId">
+              <mat-option *ngFor="let rank of ranks" [value]="rank.id">
+                {{rank.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <mat-form-field class="fullWidth-field">
+            <input type="text" placeholder="Unit *" matInput formControlName="unitId" [matAutocomplete]="unit">
+            <mat-autocomplete #unit="matAutocomplete" [displayWith]="onDisplayUnit">
+              <mat-option *ngFor="let unit of units$ | async" [value]="unit">{{unit.name}}</mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 offset-md-1 offest-lg-1" *ngIf="!isBasicUser">
+          <mat-slide-toggle color="accent" style="margin-top: 1rem" [ngModelOptions]="{standalone: true}" [(ngModel)]="isDependent">Is a Dependent</mat-slide-toggle>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4" [hidden]="!isDependent || isBasicUser">
+          <mat-form-field class="fullWidth-field">
+            <input matInput placeholder="Sponsor's DoD ID" formControlName="sponsorDodId" type="number" [min]="DodId.MIN" [max]="DodId.MAX"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57" [requiredIf]="isDependent">
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card>
+    <br>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>License Information</mat-card-title>
+      </mat-card-header>
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-2">
+          <mat-form-field color="accent" class="fullWidth-field">
+            <input matInput [min]="minExpDate" [max]="maxExpDate" [matDatepicker]="expPicker" placeholder="Select Expiration Date" formControlName="dateExpired"
+              disabled required>
+            <mat-datepicker-toggle matSuffix [for]="expPicker"></mat-datepicker-toggle>
+            <mat-datepicker #expPicker disabled="false"></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-5 col-md-5 col-lg-3 offset-md-1 offest-lg-1" *ngIf="isAdmin && license == null">
+          <mat-slide-toggle color="accent" class="toggle-align" [ngModelOptions]="{standalone: true}" [(ngModel)]="hasPermitNumber">Existing Permit Number</mat-slide-toggle>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4" [hidden]="!hasPermitNumber">
+          <mat-form-field class="fullWidth-field">
+            <input maxlength="11" matInput placeholder="Permit Number" formControlName="permitNumber" [requiredIf]="hasPermitNumber">
+          </mat-form-field>
+        </div>
+      </div>
+      <br>
+      <mat-card-subtitle>For Operation Of *</mat-card-subtitle>
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <mat-slide-toggle color="accent" formControlName="autoJeep">Auto/Jeep</mat-slide-toggle>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <mat-slide-toggle color="accent" formControlName="motorCycle">Motor Cycle</mat-slide-toggle>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <mat-slide-toggle color="accent" formControlName="motor">Motor</mat-slide-toggle>
+        </div>
+      </div>
+      <br>
+      <mat-card-subtitle>Restrictions</mat-card-subtitle>
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3">
+          <mat-slide-toggle color="accent" formControlName="glasses">Glasses/Contacts</mat-slide-toggle>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+            <mat-slide-toggle color="accent" formControlName="tdy">TDY</mat-slide-toggle>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+              <mat-slide-toggle color="accent" formControlName="onBaseOnly">On Base Only</mat-slide-toggle>
+            </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4" *ngIf="isAdmin">
+            <mat-form-field class="fullWidth-field">
+              <input 
+                maxlength="30"
+                matInput placeholder="License Remarks" 
+                formControlName="remarks">
+            </mat-form-field>
+          </div>
+      </div>
+    </mat-card>
+    <br>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>License Signature</mat-card-title>
+        </mat-card-header>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <canvas id="cnv" name="cnv" #cnv width="500" height="100"></canvas>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6" *ngIf="isAdmin">
+            <mat-card-subtitle>License Authentication</mat-card-subtitle>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <mat-slide-toggle color="accent" formControlName="isAuthenticated">License has been authenciated</mat-slide-toggle>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 col-md-2 col-lg-1">
+          <a mat-stroked-button href="defendxsig:">Sign</a>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-1">
+          <input type="file" #file style="display: none" (change)="onSigFileSelected($event)" accept=".sig" />
+          <button mat-stroked-button type="button" (click)="onUploadSigBtnClick()">Upload Signature</button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3 offset-sm-5 offset-md-5 offset-lg-5">
+          <button mat-stroked-button (click)="onCancel()">Back</button>
+          <button mat-raised-button color="accent" [disabled]="submitLoading" type="submit" style="margin-left: 30px">{{submitLoading ? 'Loading...' : 'Submit'}}</button>
+        </div>
+      </div>
+    </mat-card>
+  </form>
+</div>
+<br>
+<br>

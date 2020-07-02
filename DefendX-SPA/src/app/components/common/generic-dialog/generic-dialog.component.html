@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <h1 mat-dialog-title>{{data.title}}</h1>
+  </div>
+  <div mat-dialog-content>
+    <div class="row">
+      <p>{{data.message}}</p>
+    </div>
+  </div>
+  <div mat-dialog-actions align="center">
+    
+    <div class="row" *ngIf="data.type == DialogTypes.Message">
+      <button mat-raised-button color="accent" mat-dialog-close>Ok</button>
+    </div>
+    <div class="row" *ngIf="data.type == DialogTypes.Confirm">
+        <button mat-raised-button color="accent" mat-dialog-close>Cancel</button>
+        <button mat-raised-button color="accent" class="button-space-left" (click)="confirm()">Ok</button>
+        
+      </div>
+  </div>
+</div>

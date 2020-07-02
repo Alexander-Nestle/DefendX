@@ -1,0 +1,51 @@
+<div class="row">
+  <h1 class="col-sm-12 col-md-12 col-lg-12">Frequently Asked Questions</h1>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <a mat-button routerLink="/licenses" href="" color="$mat-blue">View Licenses</a>
+    <i class="material-icons md-24" style="vertical-align:middle">keyboard_arrow_right</i>
+    <a mat-button routerLink="." href="" color="$mat-blue">FAQs</a>
+  </div>
+</div>
+<br />
+<div *ngFor="let accountType of accountTypes$ | async">
+  <mat-card *ngIf="!(accountType.id == ACCOUNT_TYPES.Administrator && user.account.accountTypeId != ACCOUNT_TYPES.Administrator) && !(accountType.id != ACCOUNT_TYPES.User && user.account.accountTypeId == ACCOUNT_TYPES.User)">
+    <div class="row">
+      <div class="col-sm-3 col-md-3 col-lg-4 width100pct vertical-align-middle">
+        <h4>{{ accountType.type }} </h4>
+      </div>
+      <div class="col-sm-2 col-md-2 col-lg-2 offset-sm-5 offset-md-5 offset-lg-5">
+        <button mat-icon-button class="align-right" color="accent" [disabled]="addLoading" type="submit" (click)="addFaq(accountType)" *ngIf="isAdmin$ | async">
+          <i class="material-icons small">add_circle</i>Add {{ accountType.type }} FAQ
+        </button>
+      </div>
+    </div>
+    <mat-accordion class="">
+      <mat-expansion-panel *ngFor="let faq of accountType.faqs;">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>{{ faq.question }}</b>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div style="padding-left: 50px">
+          <p>{{ faq.answer }}</p>
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-2 offset-sm-7 offset-md-7 offset-lg-10 btn-group" *ngIf="isAdmin$ | async">
+              <button mat-button mat-button color="primary" (click)="editFaq(faq)">
+                <i class="material-icons md-24">edit</i>Edit</button>
+              <button mat-button mat-button color="primary" (click)="deleteFaq(faq)">
+                <i class="material-icons md-24">delete_forever</i>Delete</button>
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card>
+  <br />
+</div>
+<!-- <div class="row">
+  <h6 class="col-sm-12 col-md-12 col-lg-12">
+    <i class="material-icons md-24 vertical-align-middle">contact_mail</i> If the answers you require are not listed here, please contact us by clicking here.</h6>
+</div> -->

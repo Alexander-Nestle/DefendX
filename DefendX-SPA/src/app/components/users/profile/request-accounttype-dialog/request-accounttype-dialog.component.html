@@ -1,0 +1,65 @@
+
+<div style="position: relative">
+  <mat-spinner class="loading-indicator" color="accent" *ngIf="(loading$ | async)"></mat-spinner>
+  <button 
+    [disabled]="(loading$ | async)"
+    mat-icon-button color="primary" 
+    class="float-right" 
+    style="position: relative; right: -16px; top: -16px"
+    (click)="onClose()">
+      <i class="material-icons md-16">close</i>
+  </button>
+
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Account Type Change Request</mat-card-title>
+    <mat-card-subtitle>Send To: 18th Security Forces/Pass and ID</mat-card-subtitle>
+  </mat-card-header>
+  <form
+  [formGroup]="form"
+  class="form"
+  (ngSubmit)="onSubmit()">
+    <mat-card-content>
+      <mat-form-field class="fullWidth-field field-margin-btm">
+        <mat-select formControlName="accountTypeName" placeholder="Required Account Type" required>
+          <mat-option
+            *ngFor="let accountType of (accountTypes$ | async)"
+            [value]="accountType.type">
+            {{ accountType.type }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="fullWidth-field field-margin-btm" hintLabel="Max 250 characters">
+        <textarea matInput #justification placeholder="Justification" formControlName="justification" matTextareaAutosize matAutosizeMinRows=1 matAutosizeMaxRows=10 maxlength="250"></textarea>
+        <mat-hint align="end">{{justification.value?.length || 0}}/250</mat-hint>
+      </mat-form-field>
+
+      <mat-form-field class="fullWidth-field field-margin-btm" *ngIf="!(this?.user?.email?.length > 0)">
+        <input matInput placeholder="Your Email" formControlName="emailAddress" maxlength="50" required>
+      </mat-form-field>
+
+      <div *ngIf="form.get('attachment').value != null; else break" class="light-background" style="display: inline-flex">
+        <p style="margin: .5rem 0 0 1rem">{{ form.get('attachment').value?.name | truncate: [30] }}</p>
+        <button mat-icon-button color="primary" (click)="onRemoveAttachedFileClick()" type="button" [disabled]="(loading$ | async)">
+          <i class="material-icons md-18">close</i>
+        </button>
+      </div>
+      <ng-template #break>
+        <br/> <br/> <br/>
+      </ng-template>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" type="submit" [disabled]="loading$ | async">Send</button>
+      <input type="file" #file style="display: none" (change)="onFileSelected($event)" accept=".pdf, .doc, .docx" />
+      <button mat-icon-button color="primary" (click)="onAttachFileClick()" type="button" [disabled]="loading$ | async">
+        <i class="material-icons md-18">attach_file</i>
+      </button>
+      <p class="text-error" style="display: inline-flex">{{attachmentErrorMessage}}</p>
+    </mat-card-actions>
+  </form>
+</div>
+
+
+

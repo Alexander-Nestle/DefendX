@@ -1,0 +1,438 @@
+<div *ngIf="retrievedLicense; else loading" mat-dialog-content>
+  <mat-grid-list cols="8" rowHeight="10px">
+    <mat-grid-tile [colspan]="8" [rowspan]="5" *ngIf="isAdmin">
+      <div class="text-inside-grid-header-right">
+        <button mat-button mat-button color="primary" (click)="onPrint()">
+          <i class="material-icons md-24">print</i>Print
+        </button>
+        <button mat-button mat-button color="primary" (click)="onAddToQueue()">
+          <i class="material-icons md-24">playlist_add</i>Add to Queue
+        </button>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="4" [rowspan]="5">
+      <div class="text-inside-grid-header-left">
+        <h3>
+          {{ retrievedLicense?.firstName + " " + retrievedLicense?.lastName }}
+        </h3>
+      </div>
+      <mat-divider
+        class="hr component-bottom"
+        style="width: 100%;"
+      ></mat-divider>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="4" [rowspan]="5">
+      <div class="text-inside-grid-header-right">
+        <h3>{{ retrievedLicense?.unit?.name }}</h3>
+      </div>
+      <mat-divider
+        class="hr component-bottom"
+        style="width: 100%;"
+      ></mat-divider>
+    </mat-grid-tile>
+
+    <!-- Service Information -->
+
+    <div>
+      <mat-grid-tile [colspan]="8" [rowspan]="6">
+        <div class="text-inside-grid-header-left">
+          <h4>Service Information</h4>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>DoD ID</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Service</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Rank</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4"> </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div>
+          <p>{{ retrievedLicense?.dodId }}</p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div>
+          <p>{{ retrievedLicense?.service?.name }}</p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div>
+          <p>{{ retrievedLicense?.rank?.name }}</p>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4"> </mat-grid-tile>
+
+      <!-- Personal Information -->
+
+      <mat-grid-tile [colspan]="8" [rowspan]="6">
+        <mat-divider
+          class="hr component-top"
+          style="width: 100%;"
+        ></mat-divider>
+        <div class="text-inside-grid-header-left">
+          <h4>Personal Information</h4>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Height</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Weight</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Hair Color</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Eye Color</h5>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <p>{{ retrievedLicense?.height + '"' }}</p>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <p>{{ retrievedLicense?.weight + " lbs" }}</p>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <p>{{ retrievedLicense?.hairColor }}</p>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <p>{{ retrievedLicense?.eyeColor }}</p>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="8" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Date of Birth</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="8" [rowspan]="4">
+        <div class="text-inside-grid-content-left">
+          <p>{{ retrievedLicense?.dob | date }}</p>
+        </div>
+      </mat-grid-tile>
+
+      <!-- Sponsor Information -->
+
+      <div *ngIf="isAdmin && retrievedLicense?.sponsorId">
+        <mat-grid-tile [colspan]="8" [rowspan]="6">
+          <mat-divider
+            class="hr component-top"
+            style="width: 100%;"
+          ></mat-divider>
+          <div class="text-inside-grid-header-left">
+            <h4>Sponsor Information</h4>
+          </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>Sponsor Name</h5>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>DoD ID</h5>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>Service</h5>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>Permit Number</h5>
+          </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p>
+            {{
+              retrievedLicense?.sponsor?.firstName +
+                " " +
+                retrievedLicense?.sponsor?.lastName
+            }}
+          </p>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p>{{ retrievedLicense?.sponsor?.dodId }}</p>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p>{{ retrievedLicense?.sponsor?.service?.name }}</p>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p>{{ retrievedLicense?.sponsor?.permitNumber }}</p>
+        </mat-grid-tile>
+      </div>
+
+      <!-- Dependents Information -->
+
+      <div *ngIf="isAdmin && retrievedLicense?.dependents.length > 0">
+        <mat-grid-tile [colspan]="8" [rowspan]="6">
+          <mat-divider
+            class="hr component-top"
+            style="width: 100%;"
+          ></mat-divider>
+          <div class="text-inside-grid-header-left">
+            <h4>Dependent Information</h4>
+          </div>
+        </mat-grid-tile>
+        <div *ngFor="let dependent of retrievedLicense?.dependents">
+          <mat-grid-tile [colspan]="2" [rowspan]="4">
+            <div class="text-inside-grid-header-left">
+              <h5>Dependent Name</h5>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2" [rowspan]="4">
+            <div class="text-inside-grid-header-left">
+              <h5>DoD ID</h5>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2" [rowspan]="4">
+            <div class="text-inside-grid-header-left">
+              <h5>Service</h5>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2" [rowspan]="4">
+            <div class="text-inside-grid-header-left">
+              <h5>Permit Number</h5>
+            </div>
+          </mat-grid-tile>
+
+          <mat-grid-tile [colspan]="2" [rowspan]="4">
+            <p>{{ dependent?.firstName + " " + dependent?.lastName }}</p>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2" [rowspan]="4">
+            <p>{{ dependent?.dodId }}</p>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2" [rowspan]="4">
+            <p>{{ dependent?.service?.name }}</p>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2" [rowspan]="4">
+            <p>{{ dependent?.permitNumber }}</p>
+          </mat-grid-tile>
+        </div>
+      </div>
+
+      <!-- License Information -->
+
+      <mat-grid-tile [colspan]="8" [rowspan]="6">
+        <mat-divider
+          class="hr component-top"
+          style="width: 100%;"
+        ></mat-divider>
+        <div class="text-inside-grid-header-left">
+          <h4>License Information</h4>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Issue Date</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Exp Date</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>For Operation Of</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Restrictions</h5>
+        </div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <p>{{ retrievedLicense?.dateCreated | date }}</p>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <p>{{ retrievedLicense?.dateExpired | date }}</p>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <p *ngIf="retrievedLicense?.autoJeep">Auto/Jeep</p><div [innerHTML]="SPACE_HTML"></div>
+        <p *ngIf="retrievedLicense?.motorCycle">Motorcycle</p><div [innerHTML]="SPACE_HTML"></div>
+        <p *ngIf="retrievedLicense?.motor">Motor</p>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2" [rowspan]="4">
+        <p *ngIf="retrievedLicense?.glasses">Glasses/Contacts</p><div [innerHTML]="SPACE_HTML"></div>
+        <p *ngIf="retrievedLicense?.tdy">TDY</p><div [innerHTML]="SPACE_HTML"></div>
+        <p *ngIf="retrievedLicense?.onBaseOnly">On Base</p>
+      </mat-grid-tile>
+
+      <!-- Remarks -->
+      <div *ngIf="retrievedLicense?.remarks">
+        <mat-grid-tile [colspan]="8" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>Remarks</h5>
+          </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p>{{ retrievedLicense?.remarks }}</p>
+        </mat-grid-tile>
+      </div>
+
+      <!-- Signature -->
+      <mat-grid-tile [colspan]="8" [rowspan]="4">
+        <div class="text-inside-grid-header-left">
+          <h5>Signature</h5>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="8" [rowspan]="10">
+        <div class="text-inside-grid-content-left">
+          <canvas id="cnv" name="cnv" #cnv width="500" height="100"></canvas>
+        </div>
+      </mat-grid-tile>
+
+      <!-- Issue Date Table -->
+      <mat-grid-tile [colspan]="8" [rowspan]="6">
+        <mat-divider
+          class="hr component-top"
+          style="width: 100%;"
+        ></mat-divider>
+        <div class="text-inside-grid-header-left">
+          <h4>Issue Dates</h4>
+        </div>
+      </mat-grid-tile>
+      <div *ngIf="dataSource?.data?.length > 0; else none">
+        <mat-grid-tile [colspan]="8" [rowspan]="20">
+          <div class="mat-elevation-z1" style="width: 90%; height: 12rem; overflow: auto;">
+            <table mat-table [dataSource]="dataSource" matSort>
+              <ng-container matColumnDef="user">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>User</th>
+                <td mat-cell *matCellDef="let issue">
+                  {{ issue.user.lastName + ", " + issue.user.firstName }}
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="issueDate">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>Issue Date</th>
+                <td mat-cell *matCellDef="let issue">
+                  {{ issue.issueDate | date: "medium" }}
+                </td>
+              </ng-container>
+
+              <tr
+                mat-header-row
+                *matHeaderRowDef="displayedColumns; sticky: true"
+              ></tr>
+              <tr
+                mat-row
+                *matRowDef="let row; columns: displayedColumns"
+                style="cursor: default;"
+              ></tr>
+            </table>
+          </div>
+        </mat-grid-tile>
+      </div>
+      <ng-template #none>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p>None</p>
+        </mat-grid-tile>
+      </ng-template>
+
+      <!-- Authentication Information -->
+
+      <div *ngIf="isAdmin">
+        <mat-grid-tile [colspan]="8" [rowspan]="6">
+          <mat-divider
+            class="hr component-top"
+            style="width: 100%;"
+          ></mat-divider>
+          <div class="text-inside-grid-header-left">
+            <h4>Authentication Information</h4>
+          </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>Authenticated</h5>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>User Name</h5>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>User DoD ID</h5>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <div class="text-inside-grid-header-left">
+            <h5>Date</h5>
+          </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p>{{ retrievedLicense?.isAuthenticated }}</p>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p *ngIf="retrievedLicense?.isAuthenticated">
+            {{
+              retrievedLicense?.lastEditedBy.name.lastName +
+                ", " +
+                retrievedLicense?.lastEditedBy.name.firstName
+            }}
+          </p>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p *ngIf="retrievedLicense?.isAuthenticated">
+            {{ retrievedLicense?.lastEditedBy.dodId }}
+          </p>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2" [rowspan]="4">
+          <p *ngIf="retrievedLicense?.isAuthenticated">
+            {{ retrievedLicense?.dateUpdated | date: "medium" }}
+          </p>
+        </mat-grid-tile>
+      </div>
+
+      <div *ngIf="!retrievedLicense?.isAuthenticated || isAdmin">
+        <mat-grid-tile [colspan]="8" [rowspan]="4">
+          <button mat-stroked-button (click)="onEdit()">Edit</button>
+          <button
+            mat-raised-button
+            color="accent"
+            style="margin-left: 1%"
+            (click)="onDelete()"
+          >
+            Delete
+          </button>
+        </mat-grid-tile>
+      </div>
+    </div>
+  </mat-grid-list>
+</div>
+
+<ng-template #loading>
+  <div style="position: relative" >
+    <mat-spinner class="center-inline" color="accent"></mat-spinner>
+  </div>
+</ng-template>

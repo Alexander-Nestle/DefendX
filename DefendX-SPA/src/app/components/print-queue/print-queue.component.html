@@ -1,0 +1,25 @@
+<mat-accordion *ngIf="printQueue?.length > 0">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header expandedHeight="auto" style="background-color:#D50000; color:#F5F5F5; position: sticky">
+      Print Queue ({{ queueCount$ | async }})
+    </mat-expansion-panel-header>
+    <table cellspacing="0" class="table">
+      <tbody *ngFor="let license of printQueue; let i = index;">
+        <tr style="font-size: 18x" style="cursor: pointer;">
+          <td scope="row" (click)="onLicenseClick(license)">{{ license.lastName +', '+ license.firstName }} 
+            <i *ngIf="!license.isAuthenticated" class="material-icons md-18 not-auth">error</i>
+          </td>
+          <td style="align-content: right">
+            <button mat-icon-button class="removeButton size-18" (click)="onRemove(license.id)" aria-label="Remove">
+              <i class="material-icons md-18">close</i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <mat-action-row>
+      <button mat-raised-button color="warn" style="margin-right: 25px" (click)="onPrint()">Print</button>
+      <button mat-stroked-button (click)="onRemoveAll()">Clear All</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>

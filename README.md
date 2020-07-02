@@ -9,7 +9,7 @@
   <a href="#tech">Tech</a> •
   <a href="#installation">Installation</a> •
   <a href="#features">Features</a> •
-  <a href="#signature-application">Signature</a>
+  <a href="#signature-application">Signature App</a>
 </p>
 
 ### ID Card Management tool

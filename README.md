@@ -3,13 +3,13 @@
   <img src="/doc/banner.png" alt="DefendX" width="900">
 </h1>
 
-<h4 align="center">A ID Card Management tool.</h4>
+<h4 align="center">An ID Card Management tool.</h4>
 
 <p align="center">
   <a href="#tech">Tech</a> •
   <a href="#installation">Installation</a> •
   <a href="#features">Features</a> •
-  <a href="#signature">Signature</a> •
+  <a href="#signature">Signature</a>
 </p>
 
 ### ID Card Management tool

@@ -9,7 +9,7 @@
   <a href="#tech">Tech</a> •
   <a href="#installation">Installation</a> •
   <a href="#features">Features</a> •
-  <a href="#signature">Signature</a>
+  <a href="#signature-application">Signature</a>
 </p>
 
 ### ID Card Management tool
@@ -88,7 +88,7 @@ $ dotnet ef database update
 *   Email account privilege requests
 *   NgRx client store
 
-## Signature
+## Signature Application
 DefendX using a desktop application called DefendXSig to enable the capturing of signatures from digital pads.  The desktop application is activated by DefendX using a Windows Registry call.
 
 ```powershell

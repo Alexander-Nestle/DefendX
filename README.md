@@ -17,6 +17,8 @@ DefendX is an ID card management software platform that was originally created t
 
 ### Tech
 *   Angular
+*   RxJS
+*   NgRx
 *   ASP.NET Core
 *   Entity Framework
 *   SQL Server

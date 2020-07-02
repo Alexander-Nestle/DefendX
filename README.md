@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="/doc/banner.png" alt="DefendX" width="900">
+  <img src="/doc/banner.png" alt="DefendX" width="700">
 </h1>
 
 <h4 align="center">An ID Card Management tool.</h4>

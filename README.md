@@ -13,7 +13,7 @@
 </p>
 
 ### ID Card Management tool
-DefendX is an ID card management software platform that was originally created to manage driver licenses of U.S. military personnel overseas, however, could be adapted to manage any credential.
+DefendX is an ID card management software platform that was originally created to manage driver licenses of U.S. military personnel overseas, however, could be adapted to manage any type of ID cards.
 
 ### Tech
 *   Angular
